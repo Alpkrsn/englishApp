@@ -1,0 +1,80 @@
+{
+    "id": "preset_b1_1",
+    "title": "B1 Intermediate Vocabulary",
+    "description": "Intermediate words for work, environment, and expressing opinions.",
+    "category": "Vocabulary",
+    "level": "B1",
+    "isPreset": true,
+    "cards": [
+        {
+            "id": "b1_c1",
+            "front": "Environment",
+            "back": "Çevre",
+            "exampleSentence": "We must protect the environment.",
+            "imageUri": "https://images.unsplash.com/photo-1499571466915-ffc02b27d65e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "id": "b1_c2",
+            "front": "Pollution",
+            "back": "Kirlilik",
+            "exampleSentence": "Air pollution is a major problem in cities.",
+            "imageUri": "https://images.unsplash.com/photo-1578604665675-9aee692f6ddc?q=80&w=1231&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "id": "b1_c3",
+            "front": "Recycle",
+            "back": "Geri dönüştürmek",
+            "exampleSentence": "We should recycle plastic bottles.",
+            "imageUri": "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=400"
+        },
+        {
+            "id": "b1_c4",
+            "front": "Career",
+            "back": "Kariyer",
+            "exampleSentence": "She is focused on her career.",
+            "imageUri": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400"
+        },
+        {
+            "id": "b1_c5",
+            "front": "Interview",
+            "back": "Mülakat / Röportaj",
+            "exampleSentence": "I have a job interview tomorrow.",
+            "imageUri": "https://images.unsplash.com/photo-1573497620053-ea5300f94f21?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "id": "b1_c6",
+            "front": "Salary",
+            "back": "Maaş",
+            "exampleSentence": "The company offers a good salary.",
+            "imageUri": "https://images.unsplash.com/photo-1713946598391-ebf4255cdd64?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "id": "b1_c7",
+            "front": "Promotion",
+            "back": "Terfi",
+            "exampleSentence": "He got a promotion last week.",
+            "imageUri": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400"
+        },
+        {
+            "id": "b1_c8",
+            "front": "Health",
+            "back": "Sağlık",
+            "exampleSentence": "Health is more important than wealth.",
+            "imageUri": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400"
+        },
+        {
+            "id": "b1_c9",
+            "front": "Symptom",
+            "back": "Belirti",
+            "exampleSentence": "Fever is a symptom of the flu.",
+            "imageUri": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400"
+        },
+        {
+            "id": "b1_c10",
+            "front": "Medicine",
+            "back": "İlaç / Tıp",
+            "exampleSentence": "Take this medicine twice a day.",
+            "imageUri": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400"
+        }
+    ]
+}

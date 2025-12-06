@@ -1,0 +1,80 @@
+{
+    "id": "preset_a2_1",
+    "title": "A2 Elementary Vocabulary",
+    "description": "Essential words for daily life, travel, and simple conversations.",
+    "category": "Vocabulary",
+    "level": "A2",
+    "isPreset": true,
+    "cards": [
+        {
+            "id": "a2_c1",
+            "front": "Airport",
+            "back": "Havalimanı",
+            "exampleSentence": "We arrived at the airport early.",
+            "imageUri": "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=400"
+        },
+        {
+            "id": "a2_c2",
+            "front": "Ticket",
+            "back": "Bilet",
+            "exampleSentence": "I bought a plane ticket to London.",
+            "imageUri": "https://plus.unsplash.com/premium_photo-1684407617372-106ebb96091e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "id": "a2_c3",
+            "front": "Hotel",
+            "back": "Otel",
+            "exampleSentence": "The hotel has a swimming pool.",
+            "imageUri": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400"
+        },
+        {
+            "id": "a2_c4",
+            "front": "Passport",
+            "back": "Pasaport",
+            "exampleSentence": "Don't forget your passport.",
+            "imageUri": "https://images.unsplash.com/photo-1454496406107-dc34337da8d6?q=80&w=1300&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "id": "a2_c5",
+            "front": "Map",
+            "back": "Harita",
+            "exampleSentence": "We used a map to find the museum.",
+            "imageUri": "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=400"
+        },
+        {
+            "id": "a2_c6",
+            "front": "Sunny",
+            "back": "Güneşli",
+            "exampleSentence": "It is a sunny day.",
+            "imageUri": "https://images.unsplash.com/photo-1622278647429-71bc97e904e8?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "id": "a2_c7",
+            "front": "Rain",
+            "back": "Yağmur",
+            "exampleSentence": "I like walking in the rain.",
+            "imageUri": "https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?w=400"
+        },
+        {
+            "id": "a2_c8",
+            "front": "Jacket",
+            "back": "Ceket",
+            "exampleSentence": "Put on your jacket, it's cold.",
+            "imageUri": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400"
+        },
+        {
+            "id": "a2_c9",
+            "front": "Shoes",
+            "back": "Ayakkabı",
+            "exampleSentence": "These shoes are very comfortable.",
+            "imageUri": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400"
+        },
+        {
+            "id": "a2_c10",
+            "front": "Train",
+            "back": "Tren",
+            "exampleSentence": "The train leaves at 5 PM.",
+            "imageUri": "https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=400"
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "linguApp",
+    "slug": "linguapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/linguApp_navyblue.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/linguApp_navyblue.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/linguApp_navyblue.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/linguApp_navyblue.png"
+    }
+  }
+}
