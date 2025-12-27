@@ -6,6 +6,8 @@ export interface Card {
     // Image Attachment
     imageUri?: string; // Local URI (file://...)
     imageBase64?: string; // Thumbnail for lists
+    // Audio Attachment
+    audioUri?: string; // Local URI (file://...)
     // SRS Fields
     interval?: number; // Days until next review
     easeFactor?: number; // Multiplier for next interval

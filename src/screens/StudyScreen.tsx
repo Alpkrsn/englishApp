@@ -8,6 +8,7 @@ import { theme } from '../constants/theme';
 import { SRSLogic } from '../utils/SRSLogic';
 import Animated, { useSharedValue, useAnimatedStyle, withSpring, withTiming, runOnJS, interpolate, Extrapolate } from 'react-native-reanimated';
 import { Gesture, GestureDetector, GestureHandlerRootView } from 'react-native-gesture-handler';
+import { Audio } from 'expo-av';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Study'>;
 const SCREEN_WIDTH = Dimensions.get('window').width;
@@ -23,6 +24,7 @@ export const StudyScreen: React.FC<Props> = ({ route, navigation }) => {
     const [isFinished, setIsFinished] = useState(false);
     const [isFlipped, setIsFlipped] = useState(false);
     const [sessionStats, setSessionStats] = useState({ correct: 0, wrong: 0 });
+    const [sound, setSound] = useState<Audio.Sound | null>(null);
 
     const translateX = useSharedValue(0);
     const translateY = useSharedValue(0);
@@ -59,7 +61,46 @@ export const StudyScreen: React.FC<Props> = ({ route, navigation }) => {
         if (activeCards.length > 0) {
             progress.value = withTiming((currentIndex + 1) / activeCards.length, { duration: 300 });
         }
-    }, [currentIndex, activeCards.length]);
+
+        // Auto-play audio if present
+        const playAudio = async () => {
+            if (activeCards.length > 0 && activeCards[currentIndex]?.audioUri) {
+                try {
+                    if (sound) {
+                        await sound.unloadAsync();
+                    }
+                    const { sound: newSound } = await Audio.Sound.createAsync(
+                        { uri: activeCards[currentIndex].audioUri },
+                        { shouldPlay: true }
+                    );
+                    setSound(newSound);
+
+                    newSound.setOnPlaybackStatusUpdate((status) => {
+                        if (status.isLoaded && status.didJustFinish) {
+                            newSound.unloadAsync();
+                        }
+                    });
+
+                } catch (error) {
+                    console.log("Error playing audio automatically", error);
+                }
+            } else {
+                if (sound) {
+                    await sound.unloadAsync();
+                    setSound(null);
+                }
+            }
+        };
+
+        playAudio();
+
+        return () => {
+            if (sound) {
+                sound.unloadAsync();
+            }
+        };
+
+    }, [currentIndex, activeCards.length]); // sound dependency removed to avoid loops, handled internally
 
     const handleRate = async (rating: 'again' | 'good' | 'easy') => {
         if (!deck || activeCards.length === 0) return;

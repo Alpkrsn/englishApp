@@ -25,6 +25,9 @@
     },
     "web": {
       "favicon": "./assets/linguApp_navyblue.png"
-    }
+    },
+    "plugins": [
+      "expo-asset"
+    ]
   }
 }

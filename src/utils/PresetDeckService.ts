@@ -3,6 +3,8 @@ import { StorageService } from './StorageService';
 import A1Basics from '../data/presetDecks/A1Basics.json';
 import A2Elementary from '../data/presetDecks/A2Elementary.json';
 import B1Intermediate from '../data/presetDecks/B1Intermediate.json';
+import { AudioAssets } from './AudioAssets';
+import { Asset } from 'expo-asset';
 
 // Map of available presets
 // In a real app, this might be dynamic or fetched from a remote source
@@ -58,6 +60,9 @@ export const PresetDeckService = {
             exampleSentence: card.exampleSentence,
             imageUri: card.imageUri,
             imageBase64: card.imageBase64,
+            audioUri: card.audioFile && AudioAssets[card.audioFile]
+                ? Asset.fromModule(AudioAssets[card.audioFile]).uri
+                : undefined,
             // Reset SRS fields
             interval: undefined,
             easeFactor: undefined,

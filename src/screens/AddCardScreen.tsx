@@ -10,6 +10,9 @@ import { Canvas, Path, BlurMask, Rect, RoundedRect, Skia, LinearGradient, vec } 
 import * as ImagePicker from 'expo-image-picker';
 import { Image } from 'expo-image';
 import { saveImage, deleteImage } from '../utils/imageUtils';
+import { saveAudio, deleteAudio } from '../utils/audioUtils';
+import * as DocumentPicker from 'expo-document-picker';
+import { Audio } from 'expo-av';
 import { Ionicons } from '@expo/vector-icons';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'AddCard'>;
@@ -77,6 +80,9 @@ export const AddCardScreen: React.FC<Props> = ({ navigation, route }) => {
     const [example, setExample] = useState(card?.exampleSentence || '');
     const [imageUri, setImageUri] = useState<string | null>(card?.imageUri || null);
     const [imageBase64, setImageBase64] = useState<string | null>(card?.imageBase64 || null);
+    const [audioUri, setAudioUri] = useState<string | null>(card?.audioUri || null);
+    const [sound, setSound] = useState<Audio.Sound | null>(null);
+    const [isPlaying, setIsPlaying] = useState(false);
     const frontInputRef = useRef<TextInput>(null);
     const backInputRef = useRef<TextInput>(null);
     const exampleInputRef = useRef<TextInput>(null);
@@ -110,6 +116,61 @@ export const AddCardScreen: React.FC<Props> = ({ navigation, route }) => {
         setImageUri(null);
         setImageBase64(null);
     };
+
+    const handlePickAudio = async () => {
+        try {
+            const result = await DocumentPicker.getDocumentAsync({
+                type: 'audio/*',
+                copyToCacheDirectory: true,
+            });
+
+            if (!result.canceled && result.assets && result.assets.length > 0) {
+                setAudioUri(result.assets[0].uri);
+            }
+        } catch (err) {
+            console.error("Error picking audio", err);
+            Alert.alert("Error", "Failed to pick audio file");
+        }
+    };
+
+    const handlePlayAudio = async () => {
+        if (!audioUri) return;
+
+        try {
+            if (sound) {
+                await sound.unloadAsync();
+            }
+            const { sound: newSound } = await Audio.Sound.createAsync({ uri: audioUri });
+            setSound(newSound);
+            setIsPlaying(true);
+            await newSound.playAsync();
+            newSound.setOnPlaybackStatusUpdate((status) => {
+                if (status.isLoaded && status.didJustFinish) {
+                    setIsPlaying(false);
+                }
+            });
+        } catch (error) {
+            console.error("Error playing audio", error);
+            Alert.alert("Error", "Failed to play audio");
+        }
+    };
+
+    const handleRemoveAudio = () => {
+        setAudioUri(null);
+        if (sound) {
+            sound.unloadAsync();
+            setSound(null);
+        }
+        setIsPlaying(false);
+    };
+
+    React.useEffect(() => {
+        return () => {
+            if (sound) {
+                sound.unloadAsync();
+            }
+        };
+    }, [sound]);
 
     const handleSave = async () => {
         if (!front.trim() || !back.trim()) return Alert.alert('Error', 'Please enter both the word and its meaning');
@@ -148,6 +209,21 @@ export const AddCardScreen: React.FC<Props> = ({ navigation, route }) => {
             finalImageBase64 = undefined;
         }
 
+        let finalAudioUri: string | null | undefined = audioUri;
+        // Handle Audio
+        if (audioUri && audioUri !== card?.audioUri) {
+            try {
+                finalAudioUri = await saveAudio(audioUri);
+            } catch (e) {
+                console.error('Failed to save audio', e);
+                Alert.alert('Error', 'Failed to save audio');
+                return;
+            }
+        } else if (!audioUri && card?.audioUri) {
+            await deleteAudio(card.audioUri);
+            finalAudioUri = undefined;
+        }
+
         const cardData: Card = {
             id: card?.id || Date.now().toString(),
             front: front.trim(),
@@ -155,6 +231,7 @@ export const AddCardScreen: React.FC<Props> = ({ navigation, route }) => {
             exampleSentence: example.trim(),
             imageUri: finalImageUri || undefined,
             imageBase64: finalImageBase64 || undefined,
+            audioUri: finalAudioUri || undefined,
             interval: card?.interval,
             easeFactor: card?.easeFactor,
             dueDate: card?.dueDate,
@@ -223,6 +300,26 @@ export const AddCardScreen: React.FC<Props> = ({ navigation, route }) => {
                         )}
                     </View>
 
+                    <View style={styles.imageSection}>
+                        <Text style={styles.label}>Audio (Optional)</Text>
+                        {audioUri ? (
+                            <View style={styles.audioPreviewContainer}>
+                                <TouchableOpacity onPress={handlePlayAudio} style={styles.playButton}>
+                                    <Ionicons name={isPlaying ? "pause-circle" : "play-circle"} size={40} color={theme.colors.primary} />
+                                    <Text style={styles.audioNameText}>Audio Attached</Text>
+                                </TouchableOpacity>
+                                <TouchableOpacity onPress={handleRemoveAudio} style={[styles.iconButton, styles.deleteIconButton]}>
+                                    <Ionicons name="trash-outline" size={24} color={theme.colors.error} />
+                                </TouchableOpacity>
+                            </View>
+                        ) : (
+                            <TouchableOpacity onPress={handlePickAudio} style={styles.addImageButton}>
+                                <Ionicons name="mic-outline" size={24} color={theme.colors.primary} />
+                                <Text style={styles.addImageText}>Add Audio</Text>
+                            </TouchableOpacity>
+                        )}
+                    </View>
+
                     <View style={styles.footer}>
                         <GestureDetector gesture={saveGesture}>
                             <Animated.View style={{ transform: [{ scale: saveButtonScale }] }}>
@@ -280,4 +377,7 @@ const styles = StyleSheet.create({
     addImageButtons: { flexDirection: 'row', gap: theme.spacing.m },
     addImageButton: { flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', padding: theme.spacing.m, backgroundColor: theme.colors.surface, borderRadius: theme.borderRadius.l, borderWidth: 1, borderColor: theme.colors.border, gap: theme.spacing.s },
     addImageText: { color: theme.colors.primary, fontWeight: '600' },
+    audioPreviewContainer: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', padding: theme.spacing.m, backgroundColor: theme.colors.surface, borderRadius: theme.borderRadius.l, borderWidth: 1, borderColor: theme.colors.border },
+    playButton: { flexDirection: 'row', alignItems: 'center', gap: theme.spacing.s },
+    audioNameText: { color: theme.colors.text, fontWeight: '500' },
 });
