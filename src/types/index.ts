@@ -31,4 +31,5 @@ export type RootStackParamList = {
     AddDeck: undefined;
     AddCard: { deckId: string; card?: Card };
     Explore: undefined;
+    Settings: undefined;
 };

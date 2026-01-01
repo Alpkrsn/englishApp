@@ -1,22 +1,62 @@
+export const palette = {
+    primary: '#4C8BF5', // Light Blue
+    primaryNeon: '#38E0D9', // Neon Cyan
+    secondary: '#E5E9F2', // Very Light Gray
+    darkNavy: '#0B1A33', // Dark Navy
+    surfaceDark: '#112240', // Lighter Navy
+    surfaceLight: '#FFFFFF', // White
+    backgroundLight: '#F5F7FA', // Light Gray-Blue
+    textDark: '#FFFFFF',
+    textLight: '#0B1A33',
+    textSecondaryDark: '#E5E9F2',
+    textSecondaryLight: '#7F8C8D',
+    error: '#E74C3C',
+    success: '#2ECC71',
+    white: '#FFFFFF',
+    accent: '#F54C8B',
+};
+
+export const darkThemeColors = {
+    primary: palette.primary,
+    primaryNeon: palette.primaryNeon,
+    secondary: palette.secondary,
+    background: palette.darkNavy,
+    card: palette.white,
+    text: palette.textDark,
+    textDark: palette.darkNavy, // Text on white cards
+    textSecondary: palette.textSecondaryDark,
+    textSecondaryDark: palette.textSecondaryLight,
+    border: palette.secondary,
+    error: palette.error,
+    success: palette.success,
+    white: palette.white,
+    darkNavy: palette.darkNavy,
+    accent: palette.accent,
+    surface: palette.surfaceDark,
+};
+
+export const lightThemeColors = {
+    primary: palette.primary,
+    primaryNeon: '#00B8D4', // Slightly darker cyan for visibility on light
+    secondary: '#BDC3C7',
+    background: palette.backgroundLight,
+    card: palette.white,
+    text: palette.textLight,
+    textDark: palette.darkNavy,
+    textSecondary: palette.textSecondaryLight,
+    textSecondaryDark: palette.textSecondaryLight,
+    border: '#BDC3C7',
+    error: palette.error,
+    success: palette.success,
+    white: palette.white,
+    darkNavy: palette.darkNavy,
+    accent: palette.accent,
+    surface: palette.surfaceLight,
+};
+
+// Default export remains for backward compatibility during refactor, defaulting to Dark
 export const theme = {
-    colors: {
-        primary: '#4C8BF5', // Light Blue
-        primaryNeon: '#38E0D9', // Neon Cyan
-        secondary: '#E5E9F2', // Very Light Gray
-        background: '#0B1A33', // Dark Navy
-        card: '#FFFFFF',
-        text: '#FFFFFF', // Default text (on dark bg)
-        textDark: '#0B1A33', // Text on white cards
-        textSecondary: '#E5E9F2', // Secondary text (on dark bg)
-        textSecondaryDark: '#7F8C8D', // Secondary text (on white cards)
-        border: '#E5E9F2',
-        error: '#E74C3C',
-        success: '#2ECC71',
-        white: '#FFFFFF',
-        darkNavy: '#0B1A33',
-        accent: '#F54C8B', // Pinkish neon
-        surface: '#112240', // Lighter Navy for cards/inputs
-    },
+    colors: darkThemeColors,
     spacing: {
         xs: 4,
         s: 8,
@@ -55,10 +95,10 @@ export const theme = {
             shadowOffset: { width: 0, height: 0 },
             shadowOpacity: 0.8,
             shadowRadius: 10,
-            elevation: 10, // Android glow approximation
-            borderRadius: 24, // xl
-            paddingVertical: 16, // m
-            paddingHorizontal: 24, // l
+            elevation: 10,
+            borderRadius: 24,
+            paddingVertical: 16,
+            paddingHorizontal: 24,
             alignItems: 'center',
             justifyContent: 'center',
         },
@@ -66,11 +106,14 @@ export const theme = {
             backgroundColor: 'transparent',
             borderWidth: 2,
             borderColor: '#4C8BF5',
-            borderRadius: 24, // xl
-            paddingVertical: 14, // m - 2px border
-            paddingHorizontal: 22, // l - 2px border
+            borderRadius: 24,
+            paddingVertical: 14,
+            paddingHorizontal: 22,
             alignItems: 'center',
             justifyContent: 'center',
         },
     },
 } as const;
+
+export type ThemeType = typeof theme;
+export type ColorsType = typeof darkThemeColors;

@@ -4,18 +4,20 @@ import { NativeStackHeaderProps } from '@react-navigation/native-stack';
 import { Ionicons } from '@expo/vector-icons';
 import { theme } from '../constants/theme';
 import Animated, { FadeIn } from 'react-native-reanimated';
+import { useTheme } from '../context/ThemeContext';
 
 export const TopBar: React.FC<NativeStackHeaderProps> = ({ navigation, route, options, back }) => {
+    const { colors } = useTheme();
     const title = options.title ?? route.name;
 
     return (
-        <SafeAreaView style={styles.safeArea}>
-            <View style={styles.container}>
+        <SafeAreaView style={[styles.safeArea, { backgroundColor: colors.background }]}>
+            <View style={[styles.container, { backgroundColor: colors.background }]}>
                 {/* Left Action (Back Button) */}
                 <View style={styles.leftContainer}>
                     {back ? (
                         <TouchableOpacity onPress={navigation.goBack} style={styles.backButton}>
-                            <Ionicons name="arrow-back" size={24} color={theme.colors.primaryNeon} />
+                            <Ionicons name="arrow-back" size={24} color={colors.primaryNeon} />
                         </TouchableOpacity>
                     ) : (
                         // Placeholder for alignment if needed, or Logo for Home
@@ -27,7 +29,7 @@ export const TopBar: React.FC<NativeStackHeaderProps> = ({ navigation, route, op
 
                 {/* Center Title */}
                 <View style={styles.centerContainer}>
-                    <Animated.Text entering={FadeIn.duration(300)} style={styles.title} numberOfLines={1}>
+                    <Animated.Text entering={FadeIn.duration(300)} style={[styles.title, { color: colors.text }]} numberOfLines={1}>
                         {title}
                     </Animated.Text>
                 </View>
@@ -35,14 +37,14 @@ export const TopBar: React.FC<NativeStackHeaderProps> = ({ navigation, route, op
                 {/* Right Action (Settings, etc.) */}
                 <View style={styles.rightContainer}>
                     {route.name === 'Home' && (
-                        <TouchableOpacity onPress={() => { /* TODO: Settings */ }}>
-                            <Ionicons name="settings-outline" size={24} color={theme.colors.primaryNeon} />
+                        <TouchableOpacity onPress={() => navigation.navigate('Settings')}>
+                            <Ionicons name="settings-outline" size={24} color={colors.primaryNeon} />
                         </TouchableOpacity>
                     )}
                 </View>
 
                 {/* Neon Underline */}
-                <View style={styles.neonLine} />
+                <View style={[styles.neonLine, { backgroundColor: colors.primaryNeon, shadowColor: colors.primaryNeon }]} />
             </View>
         </SafeAreaView>
     );

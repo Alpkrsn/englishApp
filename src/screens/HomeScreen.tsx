@@ -12,11 +12,13 @@ import { Ionicons } from '@expo/vector-icons';
 import { DeckCard } from '../components/DeckCard';
 import { EmptyState } from '../components/EmptyState';
 import { SearchFilterBar, SortOption } from '../components/SearchFilterBar';
+import { useTheme } from '../context/ThemeContext';
 
 const { width } = Dimensions.get('window');
 type Props = NativeStackScreenProps<RootStackParamList, 'Home'>;
 
 export const HomeScreen: React.FC<Props> = ({ navigation }) => {
+    const { colors, isDarkMode } = useTheme();
     const [decks, setDecks] = useState<Deck[]>([]);
     const [filteredDecks, setFilteredDecks] = useState<Deck[]>([]);
     const [searchQuery, setSearchQuery] = useState('');
@@ -99,12 +101,12 @@ export const HomeScreen: React.FC<Props> = ({ navigation }) => {
     );
 
     return (
-        <View style={styles.container}>
-            <StatusBar style="light" />
+        <View style={[styles.container, { backgroundColor: colors.background }]}>
+            <StatusBar style={isDarkMode ? 'light' : 'dark'} />
             <View style={styles.headerGlowContainer}>
                 <Canvas style={{ flex: 1 }}>
                     <Rect x={0} y={0} width={width} height={150}>
-                        <LinearGradient start={vec(width / 2, 0)} end={vec(width / 2, 150)} colors={['rgba(76, 139, 245, 0.15)', 'transparent']} />
+                        <LinearGradient start={vec(width / 2, 0)} end={vec(width / 2, 150)} colors={[colors.primary + '26', 'transparent']} />
                     </Rect>
                 </Canvas>
             </View>
@@ -114,7 +116,7 @@ export const HomeScreen: React.FC<Props> = ({ navigation }) => {
                 renderItem={renderItem}
                 keyExtractor={(item) => item.id}
                 contentContainerStyle={styles.listContent}
-                refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={theme.colors.primary} />}
+                refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={colors.primary} />}
                 ListHeaderComponent={
                     <View>
                         <SearchFilterBar
@@ -136,26 +138,26 @@ export const HomeScreen: React.FC<Props> = ({ navigation }) => {
                     </Animated.View>
 
                     <View style={styles.menuContainer}>
-                        <Animated.View style={[styles.menuBox, menuAnimatedStyle]}>
+                        <Animated.View style={[styles.menuBox, menuAnimatedStyle, { backgroundColor: colors.surface, borderColor: isDarkMode ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)' }]}>
                             <TouchableOpacity
-                                style={styles.menuButton}
+                                style={[styles.menuButton, { backgroundColor: isDarkMode ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)' }]}
                                 onPress={() => { toggleMenu(); navigation.navigate('AddDeck'); }}
                             >
                                 <View style={styles.menuIconContainer}>
-                                    <Ionicons name="grid-outline" size={32} color={theme.colors.text} />
-                                    <View style={styles.plusBadge}>
+                                    <Ionicons name="grid-outline" size={32} color={colors.text} />
+                                    <View style={[styles.plusBadge, { backgroundColor: colors.primary, borderColor: colors.surface }]}>
                                         <Ionicons name="add" size={12} color="white" />
                                     </View>
                                 </View>
-                                <Text style={styles.menuButtonLabel}>Create Deck</Text>
+                                <Text style={[styles.menuButtonLabel, { color: colors.text }]}>Create Deck</Text>
                             </TouchableOpacity>
 
                             <TouchableOpacity
-                                style={styles.menuButton}
+                                style={[styles.menuButton, { backgroundColor: isDarkMode ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)' }]}
                                 onPress={() => { toggleMenu(); navigation.navigate('Explore'); }}
                             >
-                                <Ionicons name="library-outline" size={34} color={theme.colors.text} />
-                                <Text style={styles.menuButtonLabel}>Explore</Text>
+                                <Ionicons name="library-outline" size={34} color={colors.text} />
+                                <Text style={[styles.menuButtonLabel, { color: colors.text }]}>Explore</Text>
                             </TouchableOpacity>
                         </Animated.View>
                     </View>
@@ -164,8 +166,8 @@ export const HomeScreen: React.FC<Props> = ({ navigation }) => {
 
             <View style={styles.centerFabContainer}>
                 <TouchableOpacity onPress={toggleMenu} activeOpacity={0.8}>
-                    <Animated.View style={[styles.centralFab, fabStyle]}>
-                        <Ionicons name="add" size={30} color={theme.colors.white} />
+                    <Animated.View style={[styles.centralFab, fabStyle, { backgroundColor: colors.primary, shadowColor: colors.primary }]}>
+                        <Ionicons name="add" size={30} color={colors.white} />
                     </Animated.View>
                 </TouchableOpacity>
             </View>

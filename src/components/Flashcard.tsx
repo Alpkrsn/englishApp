@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, Text, StyleSheet, TouchableWithoutFeedback, ViewStyle } from 'react-native';
+import React, { useEffect } from 'react';
+import { View, Text, StyleSheet, TouchableWithoutFeedback, ViewStyle, TouchableOpacity } from 'react-native';
 import Animated, {
     useSharedValue,
     useAnimatedStyle,
@@ -9,6 +9,8 @@ import Animated, {
     SharedValue
 } from 'react-native-reanimated';
 import { Image } from 'expo-image';
+import * as Speech from 'expo-speech';
+import { Ionicons } from '@expo/vector-icons';
 import { Card } from '../types';
 import { theme } from '../constants/theme';
 
@@ -17,10 +19,15 @@ interface Props {
     onFlip?: () => void;
     style?: ViewStyle;
     animatedStyle?: any; // For swipe animations
+    isFlipped: boolean;
 }
 
-export const Flashcard: React.FC<Props> = ({ card, onFlip, style, animatedStyle }) => {
+export const Flashcard: React.FC<Props> = ({ card, onFlip, style, animatedStyle, isFlipped }) => {
     const spin = useSharedValue(0);
+
+    useEffect(() => {
+        spin.value = withTiming(isFlipped ? 180 : 0, { duration: 500 });
+    }, [isFlipped]);
 
     const frontAnimatedStyle = useAnimatedStyle(() => {
         const spinVal = interpolate(spin.value, [0, 180], [0, 180], Extrapolate.CLAMP);
@@ -41,11 +48,21 @@ export const Flashcard: React.FC<Props> = ({ card, onFlip, style, animatedStyle 
     });
 
     const handlePress = () => {
-        spin.value = withTiming(spin.value === 0 ? 180 : 0, { duration: 500 });
         if (onFlip) {
             onFlip();
         }
     };
+
+    const handleSpeak = (text: string) => {
+        Speech.stop();
+        Speech.speak(text, { language: 'en' });
+    };
+
+    useEffect(() => {
+        return () => {
+            Speech.stop();
+        };
+    }, []);
 
     return (
         <TouchableWithoutFeedback onPress={handlePress}>
@@ -59,11 +76,19 @@ export const Flashcard: React.FC<Props> = ({ card, onFlip, style, animatedStyle 
                             transition={200}
                         />
                     )}
-                    <Text style={styles.text}>{card.front}</Text>
+                    <View style={styles.textContainer}>
+                        <Text style={styles.text}>{card.front}</Text>
+                        <TouchableOpacity onPress={() => handleSpeak(card.front)} style={styles.speakerButton}>
+                            <Ionicons name="volume-high" size={24} color={theme.colors.primary} />
+                        </TouchableOpacity>
+                    </View>
                     <Text style={styles.hint}>Tap to flip</Text>
                 </Animated.View>
                 <Animated.View style={[styles.card, styles.cardBack, backAnimatedStyle]}>
-                    <Text style={styles.text}>{card.back}</Text>
+                    <View style={styles.textContainer}>
+                        <Text style={styles.text}>{card.back}</Text>
+
+                    </View>
                     {card.exampleSentence && (
                         <Text style={styles.example}>"{card.exampleSentence}"</Text>
                     )}
@@ -111,6 +136,16 @@ const styles = StyleSheet.create({
         color: theme.colors.textDark,
         textAlign: 'center',
         marginBottom: theme.spacing.m,
+    },
+    textContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginBottom: theme.spacing.m,
+    },
+    speakerButton: {
+        marginLeft: theme.spacing.s,
+        padding: 4,
     },
     hint: {
         ...theme.typography.caption,

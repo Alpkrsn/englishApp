@@ -8,6 +8,7 @@ import { StudyScreen } from '../screens/StudyScreen';
 import { AddDeckScreen } from '../screens/AddDeckScreen';
 import { AddCardScreen } from '../screens/AddCardScreen';
 import { ExploreScreen } from '../screens/ExploreScreen';
+import { SettingsScreen } from '../screens/SettingsScreen';
 
 import { theme } from '../constants/theme';
 import { TopBar } from '../components/TopBar';
@@ -55,6 +56,11 @@ export const AppNavigator = () => {
                     name="Explore"
                     component={ExploreScreen}
                     options={{ title: 'Explore Decks' }}
+                />
+                <Stack.Screen
+                    name="Settings"
+                    component={SettingsScreen}
+                    options={{ title: 'Settings' }}
                 />
 
             </Stack.Navigator>

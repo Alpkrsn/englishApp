@@ -208,7 +208,7 @@ export const StudyScreen: React.FC<Props> = ({ route, navigation }) => {
                 </View>
                 <View style={styles.cardArea}>
                     <GestureDetector gesture={gesture}>
-                        <Flashcard key={`${currentCard.id}-${roundNumber}`} card={currentCard} onFlip={() => setIsFlipped(!isFlipped)} animatedStyle={cardAnimatedStyle} />
+                        <Flashcard key={`${currentCard.id}-${roundNumber}`} card={currentCard} onFlip={() => setIsFlipped(!isFlipped)} animatedStyle={cardAnimatedStyle} isFlipped={isFlipped} />
                     </GestureDetector>
                 </View>
                 <View style={styles.controls}>
