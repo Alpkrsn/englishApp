@@ -1,0 +1,610 @@
+{
+    "id": "preset_c1_1",
+    "title": "C1 Advanced Vocabulary",
+    "description": "Sophisticated vocabulary for complex expression and abstract concepts.",
+    "category": "Vocabulary",
+    "level": "C1",
+    "isPreset": true,
+    "cards": [
+        {
+            "id": "c1_1",
+            "front": "Advocate",
+            "back": "Savunmak / Desteklemek",
+            "exampleSentence": "He advocates for human rights."
+        },
+        {
+            "id": "c1_2",
+            "front": "Coherent",
+            "back": "Tutarlı / Mantıklı",
+            "exampleSentence": "Her argument was clear and coherent."
+        },
+        {
+            "id": "c1_3",
+            "front": "Diverse",
+            "back": "Çeşitli / Farklı",
+            "exampleSentence": "New York is a culturally diverse city."
+        },
+        {
+            "id": "c1_4",
+            "front": "Enhance",
+            "back": "Geliştirmek / Artırmak",
+            "exampleSentence": "Music can enhance the atmosphere."
+        },
+        {
+            "id": "c1_5",
+            "front": "Fundamental",
+            "back": "Temel / Esas",
+            "exampleSentence": "Freedom is a fundamental right."
+        },
+        {
+            "id": "c1_6",
+            "front": "Hypothesis",
+            "back": "Hipotez / Varsayım",
+            "exampleSentence": "Scientists tested the hypothesis."
+        },
+        {
+            "id": "c1_7",
+            "front": "Incentive",
+            "back": "Teşvik / Özendirme",
+            "exampleSentence": "Bonus payments provide an incentive to work harder."
+        },
+        {
+            "id": "c1_8",
+            "front": "Legacy",
+            "back": "Miras",
+            "exampleSentence": "The war left a painful legacy."
+        },
+        {
+            "id": "c1_9",
+            "front": "Mechanism",
+            "back": "Mekanizma / İşleyiş",
+            "exampleSentence": "The locking mechanism is broken."
+        },
+        {
+            "id": "c1_10",
+            "front": "Notion",
+            "back": "Kavram / Düşünce",
+            "exampleSentence": "The notion of time travel is fascinating."
+        },
+        {
+            "id": "c1_11",
+            "front": "Objective",
+            "back": "Nesnel / Objektif",
+            "exampleSentence": "Try to be objective."
+        },
+        {
+            "id": "c1_12",
+            "front": "Perspective",
+            "back": "Bakış açısı / Perspektif",
+            "exampleSentence": "Try to see it from my perspective."
+        },
+        {
+            "id": "c1_13",
+            "front": "Ratio",
+            "back": "Oran",
+            "exampleSentence": "The ratio of men to women is 2 to 1."
+        },
+        {
+            "id": "c1_14",
+            "front": "Scope",
+            "back": "Kapsam / Alan",
+            "exampleSentence": "This is outside the scope of my job."
+        },
+        {
+            "id": "c1_15",
+            "front": "Trigger",
+            "back": "Tetiklemek",
+            "exampleSentence": "Smoke can trigger an asthma attack."
+        },
+        {
+            "id": "c1_16",
+            "front": "Underlying",
+            "back": "Altında yatan / Temel",
+            "exampleSentence": "We must address the underlying causes."
+        },
+        {
+            "id": "c1_17",
+            "front": "Verify",
+            "back": "Doğrulamak / Teyit etmek",
+            "exampleSentence": "Please verify your account."
+        },
+        {
+            "id": "c1_18",
+            "front": "Widespread",
+            "back": "Yaygın",
+            "exampleSentence": "There is widespread support for the plan."
+        },
+        {
+            "id": "c1_19",
+            "front": "Adequate",
+            "back": "Yeterli",
+            "exampleSentence": "The food supply is adequate."
+        },
+        {
+            "id": "c1_20",
+            "front": "Bond",
+            "back": "Bağ / İlişki",
+            "exampleSentence": "There is a strong bond between them."
+        },
+        {
+            "id": "c1_21",
+            "front": "Clarify",
+            "back": "Açıklığa kavuşturmak",
+            "exampleSentence": "Could you clarify that point?"
+        },
+        {
+            "id": "c1_22",
+            "front": "Demonstrate",
+            "back": "Göstermek / Kanıtlamak",
+            "exampleSentence": "Let me demonstrate how it works."
+        },
+        {
+            "id": "c1_23",
+            "front": "Evaluate",
+            "back": "Değerlendirmek",
+            "exampleSentence": "We need to evaluate the results."
+        },
+        {
+            "id": "c1_24",
+            "front": "Framework",
+            "back": "Çerçeve / İskelet",
+            "exampleSentence": "This provides a legal framework."
+        },
+        {
+            "id": "c1_25",
+            "front": "Implicate",
+            "back": "Bulaştırmak / İmal etmek",
+            "exampleSentence": "He tried to implicate me in the crime."
+        },
+        {
+            "id": "c1_26",
+            "front": "Liberal",
+            "back": "Özgürlükçü / Bol",
+            "exampleSentence": "She has liberal views."
+        },
+        {
+            "id": "c1_27",
+            "front": "Margin",
+            "back": "Kenar boşluğu / Pay",
+            "exampleSentence": "They won by a narrow margin."
+        },
+        {
+            "id": "c1_28",
+            "front": "Norm",
+            "back": "Norm / Kural",
+            "exampleSentence": "Social norms vary between cultures."
+        },
+        {
+            "id": "c1_29",
+            "front": "Offset",
+            "back": "Dengelemek / Karşılamak",
+            "exampleSentence": "Gains in one area offset losses in another."
+        },
+        {
+            "id": "c1_30",
+            "front": "Potential",
+            "back": "Potansiyel / Olası",
+            "exampleSentence": "She has great potential."
+        },
+        {
+            "id": "c1_31",
+            "front": "Reluctance",
+            "back": "İsteksizlik",
+            "exampleSentence": "I understand your reluctance."
+        },
+        {
+            "id": "c1_32",
+            "front": "Scheme",
+            "back": "Tasarı / Plan",
+            "exampleSentence": "He has a scheme to make money."
+        },
+        {
+            "id": "c1_33",
+            "front": "Theme",
+            "back": "Tema",
+            "exampleSentence": "The theme of the book is love."
+        },
+        {
+            "id": "c1_34",
+            "front": "Utility",
+            "back": "Fayda / Yarar",
+            "exampleSentence": "We discussed the utility of the tool."
+        },
+        {
+            "id": "c1_35",
+            "front": "Visual",
+            "back": "Görsel",
+            "exampleSentence": "Visual aids help learning."
+        },
+        {
+            "id": "c1_36",
+            "front": "Abstract",
+            "back": "Soyut",
+            "exampleSentence": "Truth is an abstract concept."
+        },
+        {
+            "id": "c1_37",
+            "front": "Brief",
+            "back": "Kısa / Özet",
+            "exampleSentence": "Give me a brief summary."
+        },
+        {
+            "id": "c1_38",
+            "front": "Cite",
+            "back": "Alıntılamak / Bahsetmek",
+            "exampleSentence": "He cited several experts."
+        },
+        {
+            "id": "c1_39",
+            "front": "Discriminate",
+            "back": "Ayrımcılık yapmak / Ayırt etmek",
+            "exampleSentence": "It is illegal to discriminate."
+        },
+        {
+            "id": "c1_40",
+            "front": "Explicit",
+            "back": "Açık / Belirgin",
+            "exampleSentence": "He gave explicit instructions."
+        },
+        {
+            "id": "c1_41",
+            "front": "Fluctuation",
+            "back": "Dalgalanma",
+            "exampleSentence": "There are minor fluctuations in temperature."
+        },
+        {
+            "id": "c1_42",
+            "front": "Guideline",
+            "back": "Kılavuz / İlke",
+            "exampleSentence": "Follow the safety guidelines."
+        },
+        {
+            "id": "c1_43",
+            "front": "Highlight",
+            "back": "Vurgulamak / Önemli an",
+            "exampleSentence": "Highlight the key words."
+        },
+        {
+            "id": "c1_44",
+            "front": "Imply",
+            "back": "İma etmek",
+            "exampleSentence": "What are you trying to imply?"
+        },
+        {
+            "id": "c1_45",
+            "front": "Inspect",
+            "back": "Denetlemek / İncelemek",
+            "exampleSentence": "Officers inspected the vehicle."
+        },
+        {
+            "id": "c1_46",
+            "front": "Kinetic",
+            "back": "Hareketli / Kinetik",
+            "exampleSentence": "Kinetic energy is energy of motion."
+        },
+        {
+            "id": "c1_47",
+            "front": "Logic",
+            "back": "Mantık",
+            "exampleSentence": "There is no logic in your argument."
+        },
+        {
+            "id": "c1_48",
+            "front": "Migrate",
+            "back": "Göç etmek",
+            "exampleSentence": "Birds migrate south in winter."
+        },
+        {
+            "id": "c1_49",
+            "front": "Nevertheless",
+            "back": "Yine de / Buna rağmen",
+            "exampleSentence": "The road was steep; nevertheless we climbed it."
+        },
+        {
+            "id": "c1_50",
+            "front": "Ongoing",
+            "back": "Devam eden",
+            "exampleSentence": "It is an ongoing process."
+        },
+        {
+            "id": "c1_51",
+            "front": "Precede",
+            "back": "Önce gelmek",
+            "exampleSentence": "A brief introduction will precede the talk."
+        },
+        {
+            "id": "c1_52",
+            "front": "Rational",
+            "back": "Mantıklı / Rasyonel",
+            "exampleSentence": "We need a rational explanation."
+        },
+        {
+            "id": "c1_53",
+            "front": "Sequence",
+            "back": "Sıra / Dizi",
+            "exampleSentence": "The numbers are in sequence."
+        },
+        {
+            "id": "c1_54",
+            "front": "Trace",
+            "back": "İzini sürmek / İz",
+            "exampleSentence": "Police traced the call."
+        },
+        {
+            "id": "c1_55",
+            "front": "Undergo",
+            "back": "Maruz kalmak / Geçirmek",
+            "exampleSentence": "He will undergo surgery."
+        },
+        {
+            "id": "c1_56",
+            "front": "Variety",
+            "back": "Çeşitlilik",
+            "exampleSentence": "We offer a variety of flavors."
+        },
+        {
+            "id": "c1_57",
+            "front": "Allocate",
+            "back": "Tahsis etmek",
+            "exampleSentence": "Allocate resources wisely."
+        },
+        {
+            "id": "c1_58",
+            "front": "Bulk",
+            "back": "Yığın / Büyük kısım",
+            "exampleSentence": "We buy in bulk."
+        },
+        {
+            "id": "c1_59",
+            "front": "Consult",
+            "back": "Danışmak",
+            "exampleSentence": "Consult your doctor."
+        },
+        {
+            "id": "c1_60",
+            "front": "Distort",
+            "back": "Çarpıtmak / Bozmak",
+            "exampleSentence": "Heat can distort the metal."
+        },
+        {
+            "id": "c1_61",
+            "front": "Erode",
+            "back": "Aşındırmak",
+            "exampleSentence": "Water eroded the rock."
+        },
+        {
+            "id": "c1_62",
+            "front": "Format",
+            "back": "Biçim / Format",
+            "exampleSentence": "Save the file in PDF format."
+        },
+        {
+            "id": "c1_63",
+            "front": "Guarantee",
+            "back": "Garanti etmek",
+            "exampleSentence": "We guarantee satisfaction."
+        },
+        {
+            "id": "c1_64",
+            "front": "Incident",
+            "back": "Olay / Hadise",
+            "exampleSentence": "Report any suspicious incident."
+        },
+        {
+            "id": "c1_65",
+            "front": "Invoke",
+            "back": "Çağırmak / Başvurmak (yasa)",
+            "exampleSentence": "He invoked his right to silence."
+        },
+        {
+            "id": "c1_66",
+            "front": "Liaison",
+            "back": "İrtibat / Bağlantı",
+            "exampleSentence": "She acts as a liaison between departments."
+        },
+        {
+            "id": "c1_67",
+            "front": "Mode",
+            "back": "Mod / Biçim",
+            "exampleSentence": "Switch to silent mode."
+        },
+        {
+            "id": "c1_68",
+            "front": "Nonchalant",
+            "back": "Kayıtsız / Soğukkanlı",
+            "exampleSentence": "He appeared nonchalant about the news."
+        },
+        {
+            "id": "c1_69",
+            "front": "Orient",
+            "back": "Yönlendirmek / Alıştırmak",
+            "exampleSentence": "We need to orient new employees."
+        },
+        {
+            "id": "c1_70",
+            "front": "Persist",
+            "back": "Israr etmek / Sürmek",
+            "exampleSentence": "The symptoms persisted for weeks."
+        },
+        {
+            "id": "c1_71",
+            "front": "Relentless",
+            "back": "Amansız / Aralıksız",
+            "exampleSentence": "The relentless rain caused floods."
+        },
+        {
+            "id": "c1_72",
+            "front": "Specify",
+            "back": "Belirtmek",
+            "exampleSentence": "Please specify your requirements."
+        },
+        {
+            "id": "c1_73",
+            "front": "Terminate",
+            "back": "Sonlandırmak",
+            "exampleSentence": "The contract was terminated."
+        },
+        {
+            "id": "c1_74",
+            "front": "Unique",
+            "back": "Benzersiz",
+            "exampleSentence": "It is a unique opportunity."
+        },
+        {
+            "id": "c1_75",
+            "front": "Visible",
+            "back": "Görünür",
+            "exampleSentence": "The stars are visible tonight."
+        },
+        {
+            "id": "c1_76",
+            "front": "Advocate",
+            "back": "Savunucu / Avukat",
+            "exampleSentence": "She is an advocate for peace."
+        },
+        {
+            "id": "c1_77",
+            "front": "Channel",
+            "back": "Kanal / Kanalize etmek",
+            "exampleSentence": "Channel your energy into work."
+        },
+        {
+            "id": "c1_78",
+            "front": "Detect",
+            "back": "Tespit etmek",
+            "exampleSentence": "The sensor detected smoke."
+        },
+        {
+            "id": "c1_79",
+            "front": "Enforce",
+            "back": "Uygulamak (zorla) / Dayatmak",
+            "exampleSentence": "Police enforce the law."
+        },
+        {
+            "id": "c1_80",
+            "front": "Grade",
+            "back": "Derece / Not",
+            "exampleSentence": "He got a good grade."
+        },
+        {
+            "id": "c1_81",
+            "front": "Hierarchy",
+            "back": "Hiyerarşi",
+            "exampleSentence": "There is a strict hierarchy."
+        },
+        {
+            "id": "c1_82",
+            "front": "Integrity",
+            "back": "Bütünlük / Dürüstlük",
+            "exampleSentence": "She is a woman of integrity."
+        },
+        {
+            "id": "c1_83",
+            "front": "Locate",
+            "back": "Konumlandırmak / Bulmak",
+            "exampleSentence": "Can you locate the town on the map?"
+        },
+        {
+            "id": "c1_84",
+            "front": "Media",
+            "back": "Medya / Araçlar",
+            "exampleSentence": "The media covered the event."
+        },
+        {
+            "id": "c1_85",
+            "front": "Nonetheless",
+            "back": "Bununla birlikte",
+            "exampleSentence": "The hike was hard, but we enjoyed it nonetheless."
+        },
+        {
+            "id": "c1_86",
+            "front": "Overseas",
+            "back": "Denizaşırı / Yurt dışı",
+            "exampleSentence": "He works overseas."
+        },
+        {
+            "id": "c1_87",
+            "front": "Paradigm",
+            "back": "Paradigma / Örnek",
+            "exampleSentence": "A new paradigm in science."
+        },
+        {
+            "id": "c1_88",
+            "front": "Reinforce",
+            "back": "Güçlendirmek",
+            "exampleSentence": "We need to reinforce the wall."
+        },
+        {
+            "id": "c1_89",
+            "front": "Solo",
+            "back": "Tek başına",
+            "exampleSentence": "He flew solo for the first time."
+        },
+        {
+            "id": "c1_90",
+            "front": "Topic",
+            "back": "Konu",
+            "exampleSentence": "The topic of discussion."
+        },
+        {
+            "id": "c1_91",
+            "front": "Via",
+            "back": "Aracılığıyla / Yoluyla",
+            "exampleSentence": "We flew via London."
+        },
+        {
+            "id": "c1_92",
+            "front": "Whereby",
+            "back": "Vasıtasıyla",
+            "exampleSentence": "A system whereby you can vote online."
+        },
+        {
+            "id": "c1_93",
+            "front": "Accumulate",
+            "back": "Birikmek",
+            "exampleSentence": "Evidence is accumulating."
+        },
+        {
+            "id": "c1_94",
+            "front": "Collapse",
+            "back": "Çökmek",
+            "exampleSentence": "The roof collapsed."
+        },
+        {
+            "id": "c1_95",
+            "front": "Devote",
+            "back": "Adamak",
+            "exampleSentence": "They devote their time to charity."
+        },
+        {
+            "id": "c1_96",
+            "front": "Entity",
+            "back": "Varlık / Birim",
+            "exampleSentence": "The company is a separate legal entity."
+        },
+        {
+            "id": "c1_97",
+            "front": "Fluctuation",
+            "back": "Dalgalanma",
+            "exampleSentence": "Market fluctuations are normal."
+        },
+        {
+            "id": "c1_98",
+            "front": "Guidance",
+            "back": "Rehberlik / Yol gösterme",
+            "exampleSentence": "She needs some guidance."
+        },
+        {
+            "id": "c1_99",
+            "front": "Highlight",
+            "back": "Öne çıkarmak",
+            "exampleSentence": "The report highlights the problem."
+        },
+        {
+            "id": "c1_100",
+            "front": "Induce",
+            "back": "Uyarmak / Tetiklemek",
+            "exampleSentence": "The drug may induce sleep."
+        }
+    ]
+}

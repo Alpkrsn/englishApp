@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { View, Text, StyleSheet, TouchableWithoutFeedback, ViewStyle, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TouchableWithoutFeedback, ViewStyle, TouchableOpacity, Dimensions } from 'react-native';
 import Animated, {
     useSharedValue,
     useAnimatedStyle,
@@ -68,14 +68,9 @@ export const Flashcard: React.FC<Props> = ({ card, onFlip, style, animatedStyle,
         <TouchableWithoutFeedback onPress={handlePress}>
             <Animated.View style={[styles.container, style, animatedStyle]}>
                 <Animated.View style={[styles.card, styles.cardFront, frontAnimatedStyle]}>
-                    {card.imageUri && (
-                        <Image
-                            source={{ uri: card.imageUri }}
-                            style={styles.cardImage}
-                            contentFit="cover"
-                            transition={200}
-                        />
-                    )}
+                    <View style={styles.iconPlaceholder}>
+                        <Ionicons name="help-circle-outline" size={80} color={theme.colors.primary} style={{ opacity: 0.8 }} />
+                    </View>
                     <View style={styles.textContainer}>
                         <Text style={styles.text}>{card.front}</Text>
                         <TouchableOpacity onPress={() => handleSpeak(card.front)} style={styles.speakerButton}>
@@ -98,10 +93,14 @@ export const Flashcard: React.FC<Props> = ({ card, onFlip, style, animatedStyle,
     );
 };
 
+const { width, height } = Dimensions.get('window');
+const CARD_WIDTH = Math.min(width * 0.85, 400); // 85% of screen width, max 400
+const CARD_HEIGHT = CARD_WIDTH * 1.3; // Aspect ratio 1.5
+
 const styles = StyleSheet.create({
     container: {
-        width: 300,
-        height: 450, // Slightly taller for better proportions
+        width: CARD_WIDTH,
+        height: CARD_HEIGHT,
         alignItems: 'center',
         justifyContent: 'center',
     },
@@ -138,14 +137,15 @@ const styles = StyleSheet.create({
         marginBottom: theme.spacing.m,
     },
     textContainer: {
-        flexDirection: 'row',
+        width: '100%',
+        height: '55%',
         alignItems: 'center',
         justifyContent: 'center',
-        marginBottom: theme.spacing.m,
+        paddingHorizontal: theme.spacing.m,
     },
     speakerButton: {
-        marginLeft: theme.spacing.s,
-        padding: 4,
+        marginTop: theme.spacing.s,
+        padding: 8,
     },
     hint: {
         ...theme.typography.caption,
@@ -161,8 +161,17 @@ const styles = StyleSheet.create({
     },
     cardImage: {
         width: '100%',
-        height: 180,
+        height: '45%',
         borderRadius: theme.borderRadius.m,
         marginBottom: theme.spacing.m,
+    },
+    iconPlaceholder: {
+        width: '100%',
+        height: '45%',
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'rgba(76, 139, 245, 0.05)',
+        borderTopLeftRadius: theme.borderRadius.l,
+        borderTopRightRadius: theme.borderRadius.l,
     },
 });

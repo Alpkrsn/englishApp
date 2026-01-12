@@ -85,6 +85,726 @@
             "exampleSentence": "He is my best friend.",
             "imageUri": "https://images.unsplash.com/photo-1530047139082-5435ca3c4614?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "audioFile": "Friend.mp3"
+        },
+        {
+            "id": "c11",
+            "front": "Family",
+            "back": "Aile",
+            "exampleSentence": "My family is very big.",
+            "imageUri": "https://placehold.co/400x300?text=Family",
+            "audioFile": "Family.mp3"
+        },
+        {
+            "id": "c12",
+            "front": "Mother",
+            "back": "Anne",
+            "exampleSentence": "My mother is cooking.",
+            "imageUri": "https://placehold.co/400x300?text=Mother",
+            "audioFile": "Mother.mp3"
+        },
+        {
+            "id": "c13",
+            "front": "Father",
+            "back": "Baba",
+            "exampleSentence": "My father is at work.",
+            "imageUri": "https://placehold.co/400x300?text=Father",
+            "audioFile": "Father.mp3"
+        },
+        {
+            "id": "c14",
+            "front": "Sister",
+            "back": "Kız kardeş",
+            "exampleSentence": "I have one sister.",
+            "imageUri": "https://placehold.co/400x300?text=Sister",
+            "audioFile": "Sister.mp3"
+        },
+        {
+            "id": "c15",
+            "front": "Brother",
+            "back": "Erkek kardeş",
+            "exampleSentence": "My brother plays football.",
+            "imageUri": "https://placehold.co/400x300?text=Brother",
+            "audioFile": "Brother.mp3"
+        },
+        {
+            "id": "c16",
+            "front": "Food",
+            "back": "Yiyecek",
+            "exampleSentence": "This food is delicious.",
+            "imageUri": "https://placehold.co/400x300?text=Food",
+            "audioFile": "Food.mp3"
+        },
+        {
+            "id": "c17",
+            "front": "Bread",
+            "back": "Ekmek",
+            "exampleSentence": "I buy bread every morning.",
+            "imageUri": "https://placehold.co/400x300?text=Bread",
+            "audioFile": "Bread.mp3"
+        },
+        {
+            "id": "c18",
+            "front": "Milk",
+            "back": "Süt",
+            "exampleSentence": "I drink milk before bed.",
+            "imageUri": "https://placehold.co/400x300?text=Milk",
+            "audioFile": "Milk.mp3"
+        },
+        {
+            "id": "c19",
+            "front": "Coffee",
+            "back": "Kahve",
+            "exampleSentence": "She loves hot coffee.",
+            "imageUri": "https://placehold.co/400x300?text=Coffee",
+            "audioFile": "Coffee.mp3"
+        },
+        {
+            "id": "c20",
+            "front": "Tea",
+            "back": "Çay",
+            "exampleSentence": "Would you like some tea?",
+            "imageUri": "https://placehold.co/400x300?text=Tea",
+            "audioFile": "Tea.mp3"
+        },
+        {
+            "id": "c21",
+            "front": "School",
+            "back": "Okul",
+            "exampleSentence": "The school is near my house.",
+            "imageUri": "https://placehold.co/400x300?text=School",
+            "audioFile": "School.mp3"
+        },
+        {
+            "id": "c22",
+            "front": "Student",
+            "back": "Öğrenci",
+            "exampleSentence": "I am a student at the university.",
+            "imageUri": "https://placehold.co/400x300?text=Student",
+            "audioFile": "Student.mp3"
+        },
+        {
+            "id": "c23",
+            "front": "Teacher",
+            "back": "Öğretmen",
+            "exampleSentence": "The teacher is writing on the board.",
+            "imageUri": "https://placehold.co/400x300?text=Teacher",
+            "audioFile": "Teacher.mp3"
+        },
+        {
+            "id": "c24",
+            "front": "Pen",
+            "back": "Kalem (Tükenmez)",
+            "exampleSentence": "Can I borrow your pen?",
+            "imageUri": "https://placehold.co/400x300?text=Pen",
+            "audioFile": "Pen.mp3"
+        },
+        {
+            "id": "c25",
+            "front": "Pencil",
+            "back": "Kurşun kalem",
+            "exampleSentence": "I need a pencil to draw.",
+            "imageUri": "https://placehold.co/400x300?text=Pencil",
+            "audioFile": "Pencil.mp3"
+        },
+        {
+            "id": "c26",
+            "front": "Door",
+            "back": "Kapı",
+            "exampleSentence": "Please close the door.",
+            "imageUri": "https://placehold.co/400x300?text=Door",
+            "audioFile": "Door.mp3"
+        },
+        {
+            "id": "c27",
+            "front": "Window",
+            "back": "Pencere",
+            "exampleSentence": "Open the window, it's hot.",
+            "imageUri": "https://placehold.co/400x300?text=Window",
+            "audioFile": "Window.mp3"
+        },
+        {
+            "id": "c28",
+            "front": "Room",
+            "back": "Oda",
+            "exampleSentence": "My room is very clean.",
+            "imageUri": "https://placehold.co/400x300?text=Room",
+            "audioFile": "Room.mp3"
+        },
+        {
+            "id": "c29",
+            "front": "Bed",
+            "back": "Yatak",
+            "exampleSentence": "I go to bed at 10 PM.",
+            "imageUri": "https://placehold.co/400x300?text=Bed",
+            "audioFile": "Bed.mp3"
+        },
+        {
+            "id": "c30",
+            "front": "Table",
+            "back": "Masa",
+            "exampleSentence": "The book is on the table.",
+            "imageUri": "https://placehold.co/400x300?text=Table",
+            "audioFile": "Table.mp3"
+        },
+        {
+            "id": "c31",
+            "front": "Chair",
+            "back": "Sandalye",
+            "exampleSentence": "Please sit on the chair.",
+            "imageUri": "https://placehold.co/400x300?text=Chair",
+            "audioFile": "Chair.mp3"
+        },
+        {
+            "id": "c32",
+            "front": "Phone",
+            "back": "Telefon",
+            "exampleSentence": "My phone is ringing.",
+            "imageUri": "https://placehold.co/400x300?text=Phone",
+            "audioFile": "Phone.mp3"
+        },
+        {
+            "id": "c33",
+            "front": "Computer",
+            "back": "Bilgisayar",
+            "exampleSentence": "I use a computer for work.",
+            "imageUri": "https://placehold.co/400x300?text=Computer",
+            "audioFile": "Computer.mp3"
+        },
+        {
+            "id": "c34",
+            "front": "Money",
+            "back": "Para",
+            "exampleSentence": "I need money to buy food.",
+            "imageUri": "https://placehold.co/400x300?text=Money",
+            "audioFile": "Money.mp3"
+        },
+        {
+            "id": "c35",
+            "front": "Time",
+            "back": "Zaman",
+            "exampleSentence": "What time is it?",
+            "imageUri": "https://placehold.co/400x300?text=Time",
+            "audioFile": "Time.mp3"
+        },
+        {
+            "id": "c36",
+            "front": "Day",
+            "back": "Gün",
+            "exampleSentence": "It is a beautiful day.",
+            "imageUri": "https://placehold.co/400x300?text=Day",
+            "audioFile": "Day.mp3"
+        },
+        {
+            "id": "c37",
+            "front": "Night",
+            "back": "Gece",
+            "exampleSentence": "The stars shine at night.",
+            "imageUri": "https://placehold.co/400x300?text=Night",
+            "audioFile": "Night.mp3"
+        },
+        {
+            "id": "c38",
+            "front": "Morning",
+            "back": "Sabah",
+            "exampleSentence": "I wake up in the morning.",
+            "imageUri": "https://placehold.co/400x300?text=Morning",
+            "audioFile": "Morning.mp3"
+        },
+        {
+            "id": "c39",
+            "front": "Week",
+            "back": "Hafta",
+            "exampleSentence": "See you next week.",
+            "imageUri": "https://placehold.co/400x300?text=Week",
+            "audioFile": "Week.mp3"
+        },
+        {
+            "id": "c40",
+            "front": "Year",
+            "back": "Yıl",
+            "exampleSentence": "Happy New Year!",
+            "imageUri": "https://placehold.co/400x300?text=Year",
+            "audioFile": "Year.mp3"
+        },
+        {
+            "id": "c41",
+            "front": "Man",
+            "back": "Adam",
+            "exampleSentence": "That man is my uncle.",
+            "imageUri": "https://placehold.co/400x300?text=Man",
+            "audioFile": "Man.mp3"
+        },
+        {
+            "id": "c42",
+            "front": "Woman",
+            "back": "Kadın",
+            "exampleSentence": "The woman is wearing a red dress.",
+            "imageUri": "https://placehold.co/400x300?text=Woman",
+            "audioFile": "Woman.mp3"
+        },
+        {
+            "id": "c43",
+            "front": "Child",
+            "back": "Çocuk",
+            "exampleSentence": "The child is playing in the park.",
+            "imageUri": "https://placehold.co/400x300?text=Child",
+            "audioFile": "Child.mp3"
+        },
+        {
+            "id": "c44",
+            "front": "Girl",
+            "back": "Kız",
+            "exampleSentence": "The girl is reading a book.",
+            "imageUri": "https://placehold.co/400x300?text=Girl",
+            "audioFile": "Girl.mp3"
+        },
+        {
+            "id": "c45",
+            "front": "Boy",
+            "back": "Erkek çocuk",
+            "exampleSentence": "The boy runs fast.",
+            "imageUri": "https://placehold.co/400x300?text=Boy",
+            "audioFile": "Boy.mp3"
+        },
+        {
+            "id": "c46",
+            "front": "City",
+            "back": "Şehir",
+            "exampleSentence": "We live in a big city.",
+            "imageUri": "https://placehold.co/400x300?text=City",
+            "audioFile": "City.mp3"
+        },
+        {
+            "id": "c47",
+            "front": "Street",
+            "back": "Sokak",
+            "exampleSentence": "The street is busy.",
+            "imageUri": "https://placehold.co/400x300?text=Street",
+            "audioFile": "Street.mp3"
+        },
+        {
+            "id": "c48",
+            "front": "Bus",
+            "back": "Otobüs",
+            "exampleSentence": "I take the bus to school.",
+            "imageUri": "https://placehold.co/400x300?text=Bus",
+            "audioFile": "Bus.mp3"
+        },
+        {
+            "id": "c49",
+            "front": "Bicycle",
+            "back": "Bisiklet",
+            "exampleSentence": "He rides his bicycle every day.",
+            "imageUri": "https://placehold.co/400x300?text=Bicycle",
+            "audioFile": "Bicycle.mp3"
+        },
+        {
+            "id": "c50",
+            "front": "Sun",
+            "back": "Güneş",
+            "exampleSentence": "The sun is yellow.",
+            "imageUri": "https://placehold.co/400x300?text=Sun",
+            "audioFile": "Sun.mp3"
+        },
+        {
+            "id": "c51",
+            "front": "Moon",
+            "back": "Ay",
+            "exampleSentence": "Look at the moon tonight.",
+            "imageUri": "https://placehold.co/400x300?text=Moon",
+            "audioFile": "Moon.mp3"
+        },
+        {
+            "id": "c52",
+            "front": "Sky",
+            "back": "Gökyüzü",
+            "exampleSentence": "The sky is blue.",
+            "imageUri": "https://placehold.co/400x300?text=Sky",
+            "audioFile": "Sky.mp3"
+        },
+        {
+            "id": "c53",
+            "front": "Tree",
+            "back": "Ağaç",
+            "exampleSentence": "There is a big tree in the garden.",
+            "imageUri": "https://placehold.co/400x300?text=Tree",
+            "audioFile": "Tree.mp3"
+        },
+        {
+            "id": "c54",
+            "front": "Flower",
+            "back": "Çiçek",
+            "exampleSentence": "This flower smells nice.",
+            "imageUri": "https://placehold.co/400x300?text=Flower",
+            "audioFile": "Flower.mp3"
+        },
+        {
+            "id": "c55",
+            "front": "Color",
+            "back": "Renk",
+            "exampleSentence": "What is your favorite color?",
+            "imageUri": "https://placehold.co/400x300?text=Color",
+            "audioFile": "Color.mp3"
+        },
+        {
+            "id": "c56",
+            "front": "Red",
+            "back": "Kırmızı",
+            "exampleSentence": "I have a red apple.",
+            "imageUri": "https://placehold.co/400x300?text=Red",
+            "audioFile": "Red.mp3"
+        },
+        {
+            "id": "c57",
+            "front": "Blue",
+            "back": "Mavi",
+            "exampleSentence": "He has blue eyes.",
+            "imageUri": "https://placehold.co/400x300?text=Blue",
+            "audioFile": "Blue.mp3"
+        },
+        {
+            "id": "c58",
+            "front": "Green",
+            "back": "Yeşil",
+            "exampleSentence": "The grass is green.",
+            "imageUri": "https://placehold.co/400x300?text=Green",
+            "audioFile": "Green.mp3"
+        },
+        {
+            "id": "c59",
+            "front": "Yellow",
+            "back": "Sarı",
+            "exampleSentence": "Bananas are yellow.",
+            "imageUri": "https://placehold.co/400x300?text=Yellow",
+            "audioFile": "Yellow.mp3"
+        },
+        {
+            "id": "c60",
+            "front": "White",
+            "back": "Beyaz",
+            "exampleSentence": "The snow is white.",
+            "imageUri": "https://placehold.co/400x300?text=White",
+            "audioFile": "White.mp3"
+        },
+        {
+            "id": "c61",
+            "front": "Black",
+            "back": "Siyah",
+            "exampleSentence": "I like black coffee.",
+            "imageUri": "https://placehold.co/400x300?text=Black",
+            "audioFile": "Black.mp3"
+        },
+        {
+            "id": "c62",
+            "front": "Big",
+            "back": "Büyük",
+            "exampleSentence": "The elephant is big.",
+            "imageUri": "https://placehold.co/400x300?text=Big",
+            "audioFile": "Big.mp3"
+        },
+        {
+            "id": "c63",
+            "front": "Small",
+            "back": "Küçük",
+            "exampleSentence": "The mouse is small.",
+            "imageUri": "https://placehold.co/400x300?text=Small",
+            "audioFile": "Small.mp3"
+        },
+        {
+            "id": "c64",
+            "front": "Good",
+            "back": "İyi",
+            "exampleSentence": "Have a good day.",
+            "imageUri": "https://placehold.co/400x300?text=Good",
+            "audioFile": "Good.mp3"
+        },
+        {
+            "id": "c65",
+            "front": "Bad",
+            "back": "Kötü",
+            "exampleSentence": "Smoking is bad for you.",
+            "imageUri": "https://placehold.co/400x300?text=Bad",
+            "audioFile": "Bad.mp3"
+        },
+        {
+            "id": "c66",
+            "front": "Happy",
+            "back": "Mutlu",
+            "exampleSentence": "I am very happy today.",
+            "imageUri": "https://placehold.co/400x300?text=Happy",
+            "audioFile": "Happy.mp3"
+        },
+        {
+            "id": "c67",
+            "front": "Sad",
+            "back": "Üzgün",
+            "exampleSentence": "Why are you sad?",
+            "imageUri": "https://placehold.co/400x300?text=Sad",
+            "audioFile": "Sad.mp3"
+        },
+        {
+            "id": "c68",
+            "front": "Hot",
+            "back": "Sıcak",
+            "exampleSentence": "The soup is hot.",
+            "imageUri": "https://placehold.co/400x300?text=Hot",
+            "audioFile": "Hot.mp3"
+        },
+        {
+            "id": "c69",
+            "front": "Cold",
+            "back": "Soğuk",
+            "exampleSentence": "The ice cream is cold.",
+            "imageUri": "https://placehold.co/400x300?text=Cold",
+            "audioFile": "Cold.mp3"
+        },
+        {
+            "id": "c70",
+            "front": "Yes",
+            "back": "Evet",
+            "exampleSentence": "Yes, I understand.",
+            "imageUri": "https://placehold.co/400x300?text=Yes",
+            "audioFile": "Yes.mp3"
+        },
+        {
+            "id": "c71",
+            "front": "No",
+            "back": "Hayır",
+            "exampleSentence": "No, thank you.",
+            "imageUri": "https://placehold.co/400x300?text=No",
+            "audioFile": "No.mp3"
+        },
+        {
+            "id": "c72",
+            "front": "Please",
+            "back": "Lütfen",
+            "exampleSentence": "Please help me.",
+            "imageUri": "https://placehold.co/400x300?text=Please",
+            "audioFile": "Please.mp3"
+        },
+        {
+            "id": "c73",
+            "front": "Sorry",
+            "back": "Üzgünüm",
+            "exampleSentence": "I am sorry for being late.",
+            "imageUri": "https://placehold.co/400x300?text=Sorry",
+            "audioFile": "Sorry.mp3"
+        },
+        {
+            "id": "c74",
+            "front": "Excuse me",
+            "back": "Affedersiniz",
+            "exampleSentence": "Excuse me, where is the toilet?",
+            "imageUri": "https://placehold.co/400x300?text=Excuse_me",
+            "audioFile": "Excuse_me.mp3"
+        },
+        {
+            "id": "c75",
+            "front": "Name",
+            "back": "İsim",
+            "exampleSentence": "My name is John.",
+            "imageUri": "https://placehold.co/400x300?text=Name",
+            "audioFile": "Name.mp3"
+        },
+        {
+            "id": "c76",
+            "front": "Word",
+            "back": "Kelime",
+            "exampleSentence": "Use this word in a sentence.",
+            "imageUri": "https://placehold.co/400x300?text=Word",
+            "audioFile": "Word.mp3"
+        },
+        {
+            "id": "c77",
+            "front": "Question",
+            "back": "Soru",
+            "exampleSentence": "I have a question.",
+            "imageUri": "https://placehold.co/400x300?text=Question",
+            "audioFile": "Question.mp3"
+        },
+        {
+            "id": "c78",
+            "front": "Number",
+            "back": "Numara",
+            "exampleSentence": "What is your phone number?",
+            "imageUri": "https://placehold.co/400x300?text=Number",
+            "audioFile": "Number.mp3"
+        },
+        {
+            "id": "c79",
+            "front": "One",
+            "back": "Bir",
+            "exampleSentence": "I have one brother.",
+            "imageUri": "https://placehold.co/400x300?text=One",
+            "audioFile": "One.mp3"
+        },
+        {
+            "id": "c80",
+            "front": "Two",
+            "back": "İki",
+            "exampleSentence": "I have two sisters.",
+            "imageUri": "https://placehold.co/400x300?text=Two",
+            "audioFile": "Two.mp3"
+        },
+        {
+            "id": "c81",
+            "front": "Three",
+            "back": "Üç",
+            "exampleSentence": "There are three apples.",
+            "imageUri": "https://placehold.co/400x300?text=Three",
+            "audioFile": "Three.mp3"
+        },
+        {
+            "id": "c82",
+            "front": "Four",
+            "back": "Dört",
+            "exampleSentence": "A car has four wheels.",
+            "imageUri": "https://placehold.co/400x300?text=Four",
+            "audioFile": "Four.mp3"
+        },
+        {
+            "id": "c83",
+            "front": "Five",
+            "back": "Beş",
+            "exampleSentence": "Give me five minutes.",
+            "imageUri": "https://placehold.co/400x300?text=Five",
+            "audioFile": "Five.mp3"
+        },
+        {
+            "id": "c84",
+            "front": "Love",
+            "back": "Aşk",
+            "exampleSentence": "I love my family.",
+            "imageUri": "https://placehold.co/400x300?text=Love",
+            "audioFile": "Love.mp3"
+        },
+        {
+            "id": "c85",
+            "front": "Life",
+            "back": "Hayat",
+            "exampleSentence": "Life is beautiful.",
+            "imageUri": "https://placehold.co/400x300?text=Life",
+            "audioFile": "Life.mp3"
+        },
+        {
+            "id": "c86",
+            "front": "Hand",
+            "back": "El",
+            "exampleSentence": "Wash your hands.",
+            "imageUri": "https://placehold.co/400x300?text=Hand",
+            "audioFile": "Hand.mp3"
+        },
+        {
+            "id": "c87",
+            "front": "Face",
+            "back": "Yüz",
+            "exampleSentence": "Wash your face.",
+            "imageUri": "https://placehold.co/400x300?text=Face",
+            "audioFile": "Face.mp3"
+        },
+        {
+            "id": "c88",
+            "front": "Eye",
+            "back": "Göz",
+            "exampleSentence": "Close your eyes.",
+            "imageUri": "https://placehold.co/400x300?text=Eye",
+            "audioFile": "Eye.mp3"
+        },
+        {
+            "id": "c89",
+            "front": "Mouth",
+            "back": "Ağız",
+            "exampleSentence": "Open your mouth.",
+            "imageUri": "https://placehold.co/400x300?text=Mouth",
+            "audioFile": "Mouth.mp3"
+        },
+        {
+            "id": "c90",
+            "front": "Work",
+            "back": "İş",
+            "exampleSentence": "I go to work by bus.",
+            "imageUri": "https://placehold.co/400x300?text=Work",
+            "audioFile": "Work.mp3"
+        },
+        {
+            "id": "c91",
+            "front": "Home",
+            "back": "Ev",
+            "exampleSentence": "I want to go home.",
+            "imageUri": "https://placehold.co/400x300?text=Home",
+            "audioFile": "Home.mp3"
+        },
+        {
+            "id": "c92",
+            "front": "Country",
+            "back": "Ülke",
+            "exampleSentence": "Which country are you from?",
+            "imageUri": "https://placehold.co/400x300?text=Country",
+            "audioFile": "Country.mp3"
+        },
+        {
+            "id": "c93",
+            "front": "World",
+            "back": "Dünya",
+            "exampleSentence": "The world is round.",
+            "imageUri": "https://placehold.co/400x300?text=World",
+            "audioFile": "World.mp3"
+        },
+        {
+            "id": "c94",
+            "front": "Bag",
+            "back": "Çanta",
+            "exampleSentence": "My bag is heavy.",
+            "imageUri": "https://placehold.co/400x300?text=Bag",
+            "audioFile": "Bag.mp3"
+        },
+        {
+            "id": "c95",
+            "front": "Box",
+            "back": "Kutu",
+            "exampleSentence": "The box is empty.",
+            "imageUri": "https://placehold.co/400x300?text=Box",
+            "audioFile": "Box.mp3"
+        },
+        {
+            "id": "c96",
+            "front": "Key",
+            "back": "Anahtar",
+            "exampleSentence": "I lost my key.",
+            "imageUri": "https://placehold.co/400x300?text=Key",
+            "audioFile": "Key.mp3"
+        },
+        {
+            "id": "c97",
+            "front": "Watch",
+            "back": "Saat",
+            "exampleSentence": "Your watch is nice.",
+            "imageUri": "https://placehold.co/400x300?text=Watch",
+            "audioFile": "Watch.mp3"
+        },
+        {
+            "id": "c98",
+            "front": "Glasses",
+            "back": "Gözlük",
+            "exampleSentence": "He wears glasses.",
+            "imageUri": "https://placehold.co/400x300?text=Glasses",
+            "audioFile": "Glasses.mp3"
+        },
+        {
+            "id": "c99",
+            "front": "Hat",
+            "back": "Şapka",
+            "exampleSentence": "Wear a hat in the sun.",
+            "imageUri": "https://placehold.co/400x300?text=Hat",
+            "audioFile": "Hat.mp3"
+        },
+        {
+            "id": "c100",
+            "front": "Shirt",
+            "back": "Gömlek",
+            "exampleSentence": "I bought a new shirt.",
+            "imageUri": "https://placehold.co/400x300?text=Shirt",
+            "audioFile": "Shirt.mp3"
         }
     ]
 }

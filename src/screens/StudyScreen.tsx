@@ -8,7 +8,6 @@ import { theme } from '../constants/theme';
 import { SRSLogic } from '../utils/SRSLogic';
 import Animated, { useSharedValue, useAnimatedStyle, withSpring, withTiming, runOnJS, interpolate, Extrapolate } from 'react-native-reanimated';
 import { Gesture, GestureDetector, GestureHandlerRootView } from 'react-native-gesture-handler';
-import { Audio } from 'expo-av';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Study'>;
 const SCREEN_WIDTH = Dimensions.get('window').width;
@@ -24,118 +23,134 @@ export const StudyScreen: React.FC<Props> = ({ route, navigation }) => {
     const [isFinished, setIsFinished] = useState(false);
     const [isFlipped, setIsFlipped] = useState(false);
     const [sessionStats, setSessionStats] = useState({ correct: 0, wrong: 0 });
-    const [sound, setSound] = useState<Audio.Sound | null>(null);
 
     const translateX = useSharedValue(0);
     const translateY = useSharedValue(0);
     const cardScale = useSharedValue(1);
     const progress = useSharedValue(0);
 
-    useEffect(() => {
-        const loadDeck = async () => {
-            const foundDeck = await StorageService.getDeckById(deckId);
-            if (foundDeck) {
-                setDeck(foundDeck);
-                let cardsToStudy = foundDeck.cards.slice();
-                if (route.params.shuffle) {
-                    for (let i = cardsToStudy.length - 1; i > 0; i--) {
-                        const j = Math.floor(Math.random() * (i + 1));
-                        [cardsToStudy[i], cardsToStudy[j]] = [cardsToStudy[j], cardsToStudy[i]];
-                    }
-                }
-                setActiveCards(cardsToStudy);
-                setNextRoundCards([]);
-                setCurrentIndex(0);
-                setRoundNumber(1);
-                setIsFinished(false);
-                setIsFlipped(false);
-                setSessionStats({ correct: 0, wrong: 0 });
-                progress.value = withTiming(1 / cardsToStudy.length, { duration: 500 });
-                StorageService.updateLastStudied(deckId);
+    const prepareSession = async () => {
+        const foundDeck = await StorageService.getDeckById(deckId);
+        if (foundDeck) {
+            setDeck(foundDeck);
+            const settings = await StorageService.getUserSettings();
+            const limit = settings.dailyCardLimit;
+
+            let allCards = foundDeck.cards;
+            const now = Date.now();
+
+            // Separate cards by status
+            const dueCards = allCards.filter(c => c.dueDate && c.dueDate <= now).sort((a, b) => (a.dueDate || 0) - (b.dueDate || 0));
+            const newCards = allCards.filter(c => !c.dueDate);
+            const futureCards = allCards.filter(c => c.dueDate && c.dueDate > now).sort((a, b) => (a.dueDate || 0) - (b.dueDate || 0));
+
+            // Priority: Due -> New -> Future (Cramming)
+            let candidateCards = [...dueCards, ...newCards];
+
+            // If strictly due+new is not enough to meet limit, fill with future cards
+            if (candidateCards.length < limit) {
+                const remainingSlots = limit - candidateCards.length;
+                const fillers = futureCards.slice(0, remainingSlots);
+                candidateCards = [...candidateCards, ...fillers];
             }
-        };
-        loadDeck();
+
+            // Apply limit (safe slice even if less than limit)
+            let cardsToStudy = candidateCards.slice(0, limit);
+
+            if (route.params.shuffle) {
+                // Shuffle the selected batch
+                for (let i = cardsToStudy.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [cardsToStudy[i], cardsToStudy[j]] = [cardsToStudy[j], cardsToStudy[i]];
+                }
+            }
+
+            // If absolutely no cards found (empty deck?), avoid empty state issues if possible
+            if (cardsToStudy.length === 0 && allCards.length > 0) {
+                // Fallback: just show some cards if logic failed, though above logic covers all cases (Due+New+Future = All)
+                cardsToStudy = allCards.slice(0, limit);
+            }
+
+            setActiveCards(cardsToStudy);
+            setNextRoundCards([]);
+            setCurrentIndex(0);
+            setRoundNumber(1);
+            setIsFinished(false);
+            setIsFlipped(false);
+            setSessionStats({ correct: 0, wrong: 0 });
+            progress.value = withTiming(1 / Math.max(cardsToStudy.length, 1), { duration: 500 });
+            StorageService.updateLastStudied(deckId);
+        }
+    };
+
+    useEffect(() => {
+        prepareSession();
     }, [deckId, route.params.shuffle]);
 
     useEffect(() => {
         if (activeCards.length > 0) {
             progress.value = withTiming((currentIndex + 1) / activeCards.length, { duration: 300 });
         }
+    }, [currentIndex, activeCards.length]);
 
-        // Auto-play audio if present
-        const playAudio = async () => {
-            if (activeCards.length > 0 && activeCards[currentIndex]?.audioUri) {
-                try {
-                    if (sound) {
-                        await sound.unloadAsync();
-                    }
-                    const { sound: newSound } = await Audio.Sound.createAsync(
-                        { uri: activeCards[currentIndex].audioUri },
-                        { shouldPlay: true }
-                    );
-                    setSound(newSound);
+    const [isProcessing, setIsProcessing] = useState(false);
 
-                    newSound.setOnPlaybackStatusUpdate((status) => {
-                        if (status.isLoaded && status.didJustFinish) {
-                            newSound.unloadAsync();
-                        }
-                    });
+    const handleRate = (rating: 'again' | 'good' | 'easy') => {
+        if (!deck || activeCards.length === 0 || isProcessing) return;
 
-                } catch (error) {
-                    console.log("Error playing audio automatically", error);
-                }
-            } else {
-                if (sound) {
-                    await sound.unloadAsync();
-                    setSound(null);
-                }
-            }
-        };
+        setIsProcessing(true);
 
-        playAudio();
-
-        return () => {
-            if (sound) {
-                sound.unloadAsync();
-            }
-        };
-
-    }, [currentIndex, activeCards.length]); // sound dependency removed to avoid loops, handled internally
-
-    const handleRate = async (rating: 'again' | 'good' | 'easy') => {
-        if (!deck || activeCards.length === 0) return;
         const currentCard = activeCards[currentIndex];
         const updatedCard = SRSLogic.calculateNextReview(currentCard, rating);
 
-        if (rating === 'again') setSessionStats(prev => ({ ...prev, wrong: prev.wrong + 1 }));
-        else setSessionStats(prev => ({ ...prev, correct: prev.correct + 1 }));
+        // Update stats (optimistic)
+        setSessionStats(prev => ({
+            correct: prev.correct + (rating !== 'again' ? 1 : 0),
+            wrong: prev.wrong + (rating === 'again' ? 1 : 0)
+        }));
 
-        await StorageService.updateCardInDeck(deckId, updatedCard);
+        // STORAGE UPDATE (Background - Fire & Forget)
+        StorageService.updateCardInDeck(deckId, updatedCard).catch(err => {
+            console.error("Failed to save card progress:", err);
+            // Ideally revert UI or show toast here, but for SRS flow speed is key
+        });
 
-        if (rating === 'again') setNextRoundCards(prev => prev.concat(updatedCard));
+        // Determine next steps
+        let cardsForNextRound = [...nextRoundCards];
+        if (updatedCard.dueDate && updatedCard.dueDate <= Date.now()) {
+            // If still due (e.g. 'again'), keep for next round
+            cardsForNextRound.push(updatedCard);
+        }
+        setNextRoundCards(cardsForNextRound);
 
+        // IMMEDIATE UI RESET
         translateX.value = 0;
         translateY.value = 0;
-        cardScale.value = 0.8;
-        cardScale.value = withSpring(1);
+        cardScale.value = 1;
 
+        // Move to next card
         if (currentIndex < activeCards.length - 1) {
-            setCurrentIndex(currentIndex + 1);
+            setCurrentIndex(prev => prev + 1);
             setIsFlipped(false);
         } else {
-            let cardsForNextRound = nextRoundCards.slice();
-            if (rating === 'again') cardsForNextRound.push(updatedCard);
-
+            // Batch finished
             if (cardsForNextRound.length > 0) {
+                // Start next round
                 setActiveCards(cardsForNextRound);
                 setNextRoundCards([]);
                 setCurrentIndex(0);
                 setRoundNumber(prev => prev + 1);
                 setIsFlipped(false);
             } else {
+                // Really finished
                 setIsFinished(true);
             }
         }
+
+        // Release lock shortly after
+        setTimeout(() => {
+            setIsProcessing(false);
+        }, 300);
     };
 
     const gesture = Gesture.Pan()
@@ -148,7 +163,8 @@ export const StudyScreen: React.FC<Props> = ({ route, navigation }) => {
                 const direction = event.translationX > 0 ? 'right' : 'left';
                 const targetX = direction === 'right' ? SCREEN_WIDTH * 1.5 : -SCREEN_WIDTH * 1.5;
                 translateX.value = withTiming(targetX, { duration: 200 }, () => {
-                    runOnJS(handleRate)(direction === 'right' ? 'good' : 'again');
+                    const rating = direction === 'right' ? 'good' : 'again';
+                    runOnJS(handleRate)(rating);
                 });
             } else {
                 translateX.value = withSpring(0);
@@ -164,16 +180,7 @@ export const StudyScreen: React.FC<Props> = ({ route, navigation }) => {
     const progressAnimatedStyle = useAnimatedStyle(() => ({ width: `${progress.value * 100}%` }));
 
     const handleRestart = () => {
-        if (deck) {
-            setActiveCards(deck.cards);
-            setNextRoundCards([]);
-            setCurrentIndex(0);
-            setRoundNumber(1);
-            setIsFinished(false);
-            setIsFlipped(false);
-            setSessionStats({ correct: 0, wrong: 0 });
-            progress.value = withTiming(1 / deck.cards.length, { duration: 500 });
-        }
+        prepareSession();
     };
 
     if (!deck || (activeCards.length === 0 && !isFinished)) return <View style={styles.container}><Text style={{ color: 'white' }}>Loading...</Text></View>;
@@ -195,6 +202,11 @@ export const StudyScreen: React.FC<Props> = ({ route, navigation }) => {
     }
 
     const currentCard = activeCards[currentIndex];
+
+    // Safety guard for rapid transitions
+    if (!currentCard) {
+        return <View style={styles.container}><Text style={{ color: 'white' }}>Loading...</Text></View>;
+    }
 
     return (
         <GestureHandlerRootView style={{ flex: 1 }}>

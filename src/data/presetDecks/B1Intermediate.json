@@ -41,7 +41,7 @@
         {
             "id": "b1_c5",
             "front": "Interview",
-            "back": "Mülakat / Röportaj",
+            "back": "Mülakat",
             "exampleSentence": "I have a job interview tomorrow.",
             "imageUri": "https://images.unsplash.com/photo-1573497620053-ea5300f94f21?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "audioFile": "Interview.mp3"
@@ -81,10 +81,730 @@
         {
             "id": "b1_c10",
             "front": "Medicine",
-            "back": "İlaç / Tıp",
+            "back": "İlaç",
             "exampleSentence": "Take this medicine twice a day.",
             "imageUri": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400",
             "audioFile": "Medicine.mp3"
+        },
+        {
+            "id": "b1_c11",
+            "front": "Conversation",
+            "back": "Konuşma/Sohbet",
+            "exampleSentence": "We had a long conversation.",
+            "imageUri": "https://placehold.co/400x300?text=Conversation",
+            "audioFile": "Conversation.mp3"
+        },
+        {
+            "id": "b1_c12",
+            "front": "Opinion",
+            "back": "Fikir/Görüş",
+            "exampleSentence": "What is your opinion on this?",
+            "imageUri": "https://placehold.co/400x300?text=Opinion",
+            "audioFile": "Opinion.mp3"
+        },
+        {
+            "id": "b1_c13",
+            "front": "Agree",
+            "back": "Katılmak (Fikre)",
+            "exampleSentence": "I agree with you.",
+            "imageUri": "https://placehold.co/400x300?text=Agree",
+            "audioFile": "Agree.mp3"
+        },
+        {
+            "id": "b1_c14",
+            "front": "Disagree",
+            "back": "Katılmamak",
+            "exampleSentence": "I disagree with his decision.",
+            "imageUri": "https://placehold.co/400x300?text=Disagree",
+            "audioFile": "Disagree.mp3"
+        },
+        {
+            "id": "b1_c15",
+            "front": "Suggest",
+            "back": "Önermek",
+            "exampleSentence": "I suggest we go to the cinema.",
+            "imageUri": "https://placehold.co/400x300?text=Suggest",
+            "audioFile": "Suggest.mp3"
+        },
+        {
+            "id": "b1_c16",
+            "front": "Recommend",
+            "back": "Tavsiye etmek",
+            "exampleSentence": "Can you recommend a good book?",
+            "imageUri": "https://placehold.co/400x300?text=Recommend",
+            "audioFile": "Recommend.mp3"
+        },
+        {
+            "id": "b1_c17",
+            "front": "Advice",
+            "back": "Tavsiye/Öğüt",
+            "exampleSentence": "She gave me good advice.",
+            "imageUri": "https://placehold.co/400x300?text=Advice",
+            "audioFile": "Advice.mp3"
+        },
+        {
+            "id": "b1_c18",
+            "front": "Decision",
+            "back": "Karar",
+            "exampleSentence": "It was a difficult decision.",
+            "imageUri": "https://placehold.co/400x300?text=Decision",
+            "audioFile": "Decision.mp3"
+        },
+        {
+            "id": "b1_c19",
+            "front": "Choice",
+            "back": "Seçim",
+            "exampleSentence": "You have a choice.",
+            "imageUri": "https://placehold.co/400x300?text=Choice",
+            "audioFile": "Choice.mp3"
+        },
+        {
+            "id": "b1_c20",
+            "front": "Opportunity",
+            "back": "Fırsat",
+            "exampleSentence": "This is a great opportunity.",
+            "imageUri": "https://placehold.co/400x300?text=Opportunity",
+            "audioFile": "Opportunity.mp3"
+        },
+        {
+            "id": "b1_c21",
+            "front": "Success",
+            "back": "Başarı",
+            "exampleSentence": "Hard work leads to success.",
+            "imageUri": "https://placehold.co/400x300?text=Success",
+            "audioFile": "Success.mp3"
+        },
+        {
+            "id": "b1_c22",
+            "front": "Failure",
+            "back": "Başarısızlık",
+            "exampleSentence": "Failure is part of learning.",
+            "imageUri": "https://placehold.co/400x300?text=Failure",
+            "audioFile": "Failure.mp3"
+        },
+        {
+            "id": "b1_c23",
+            "front": "Goal",
+            "back": "Hedef",
+            "exampleSentence": "My goal is to learn English.",
+            "imageUri": "https://placehold.co/400x300?text=Goal",
+            "audioFile": "Goal.mp3"
+        },
+        {
+            "id": "b1_c24",
+            "front": "Achievement",
+            "back": "Başarı/Kazanım",
+            "exampleSentence": "Winning the prize was a big achievement.",
+            "imageUri": "https://placehold.co/400x300?text=Achievement",
+            "audioFile": "Achievement.mp3"
+        },
+        {
+            "id": "b1_c25",
+            "front": "Challenge",
+            "back": "Mücadele/Zorluk",
+            "exampleSentence": "I like a challenge.",
+            "imageUri": "https://placehold.co/400x300?text=Challenge",
+            "audioFile": "Challenge.mp3"
+        },
+        {
+            "id": "b1_c26",
+            "front": "Experience",
+            "back": "Tecrübe",
+            "exampleSentence": "She has a lot of experience.",
+            "imageUri": "https://placehold.co/400x300?text=Experience",
+            "audioFile": "Experience.mp3"
+        },
+        {
+            "id": "b1_c27",
+            "front": "Skill",
+            "back": "Beceri",
+            "exampleSentence": "Cooking is a useful skill.",
+            "imageUri": "https://placehold.co/400x300?text=Skill",
+            "audioFile": "Skill.mp3"
+        },
+        {
+            "id": "b1_c28",
+            "front": "Knowledge",
+            "back": "Bilgi",
+            "exampleSentence": "Knowledge is power.",
+            "imageUri": "https://placehold.co/400x300?text=Knowledge",
+            "audioFile": "Knowledge.mp3"
+        },
+        {
+            "id": "b1_c29",
+            "front": "Education",
+            "back": "Eğitim",
+            "exampleSentence": "Education is important for everyone.",
+            "imageUri": "https://placehold.co/400x300?text=Education",
+            "audioFile": "Education.mp3"
+        },
+        {
+            "id": "b1_c30",
+            "front": "University",
+            "back": "Üniversite",
+            "exampleSentence": "He studies at the university.",
+            "imageUri": "https://placehold.co/400x300?text=University",
+            "audioFile": "University.mp3"
+        },
+        {
+            "id": "b1_c31",
+            "front": "Degree",
+            "back": "Derece (Diploma)",
+            "exampleSentence": "She has a degree in biology.",
+            "imageUri": "https://placehold.co/400x300?text=Degree",
+            "audioFile": "Degree.mp3"
+        },
+        {
+            "id": "b1_c32",
+            "front": "Subject",
+            "back": "Konu/Ders",
+            "exampleSentence": "Math is my favorite subject.",
+            "imageUri": "https://placehold.co/400x300?text=Subject",
+            "audioFile": "Subject.mp3"
+        },
+        {
+            "id": "b1_c33",
+            "front": "History",
+            "back": "Tarih",
+            "exampleSentence": "We are learning about history.",
+            "imageUri": "https://placehold.co/400x300?text=History",
+            "audioFile": "History.mp3"
+        },
+        {
+            "id": "b1_c34",
+            "front": "Geography",
+            "back": "Coğrafya",
+            "exampleSentence": "I like geography.",
+            "imageUri": "https://placehold.co/400x300?text=Geography",
+            "audioFile": "Geography.mp3"
+        },
+        {
+            "id": "b1_c35",
+            "front": "Science",
+            "back": "Bilim",
+            "exampleSentence": "Science explains how things work.",
+            "imageUri": "https://placehold.co/400x300?text=Science",
+            "audioFile": "Science.mp3"
+        },
+        {
+            "id": "b1_c36",
+            "front": "Technology",
+            "back": "Teknoloji",
+            "exampleSentence": "Technology changes fast.",
+            "imageUri": "https://placehold.co/400x300?text=Technology",
+            "audioFile": "Technology.mp3"
+        },
+        {
+            "id": "b1_c37",
+            "front": "Internet",
+            "back": "İnternet",
+            "exampleSentence": "I use the internet every day.",
+            "imageUri": "https://placehold.co/400x300?text=Internet",
+            "audioFile": "Internet.mp3"
+        },
+        {
+            "id": "b1_c38",
+            "front": "Website",
+            "back": "Web sitesi",
+            "exampleSentence": "This is a useful website.",
+            "imageUri": "https://placehold.co/400x300?text=Website",
+            "audioFile": "Website.mp3"
+        },
+        {
+            "id": "b1_c39",
+            "front": "Application",
+            "back": "Uygulama",
+            "exampleSentence": "I downloaded a new application.",
+            "imageUri": "https://placehold.co/400x300?text=Application",
+            "audioFile": "Application.mp3"
+        },
+        {
+            "id": "b1_c40",
+            "front": "Software",
+            "back": "Yazılım",
+            "exampleSentence": "The computer needs new software.",
+            "imageUri": "https://placehold.co/400x300?text=Software",
+            "audioFile": "Software.mp3"
+        },
+        {
+            "id": "b1_c41",
+            "front": "Hardware",
+            "back": "Donanım",
+            "exampleSentence": "The hardware is expensive.",
+            "imageUri": "https://placehold.co/400x300?text=Hardware",
+            "audioFile": "Hardware.mp3"
+        },
+        {
+            "id": "b1_c42",
+            "front": "Screen",
+            "back": "Ekran",
+            "exampleSentence": "The screen is broken.",
+            "imageUri": "https://placehold.co/400x300?text=Screen",
+            "audioFile": "Screen.mp3"
+        },
+        {
+            "id": "b1_c43",
+            "front": "Keyboard",
+            "back": "Klavye",
+            "exampleSentence": "I type on the keyboard.",
+            "imageUri": "https://placehold.co/400x300?text=Keyboard",
+            "audioFile": "Keyboard.mp3"
+        },
+        {
+            "id": "b1_c44",
+            "front": "Mouse",
+            "back": "Fare (Bilgisayar)",
+            "exampleSentence": "Click with the mouse.",
+            "imageUri": "https://placehold.co/400x300?text=Mouse",
+            "audioFile": "Mouse.mp3"
+        },
+        {
+            "id": "b1_c45",
+            "front": "Click",
+            "back": "Tıklamak",
+            "exampleSentence": "Click the button to start.",
+            "imageUri": "https://placehold.co/400x300?text=Click",
+            "audioFile": "Click.mp3"
+        },
+        {
+            "id": "b1_c46",
+            "front": "Download",
+            "back": "İndirmek",
+            "exampleSentence": "You can download the file here.",
+            "imageUri": "https://placehold.co/400x300?text=Download",
+            "audioFile": "Download.mp3"
+        },
+        {
+            "id": "b1_c47",
+            "front": "Upload",
+            "back": "Yüklemek",
+            "exampleSentence": "Upload your photo now.",
+            "imageUri": "https://placehold.co/400x300?text=Upload",
+            "audioFile": "Upload.mp3"
+        },
+        {
+            "id": "b1_c48",
+            "front": "Email",
+            "back": "E-posta",
+            "exampleSentence": "Send me an email.",
+            "imageUri": "https://placehold.co/400x300?text=Email",
+            "audioFile": "Email.mp3"
+        },
+        {
+            "id": "b1_c49",
+            "front": "Message",
+            "back": "Mesaj",
+            "exampleSentence": "I got a message from him.",
+            "imageUri": "https://placehold.co/400x300?text=Message",
+            "audioFile": "Message.mp3"
+        },
+        {
+            "id": "b1_c50",
+            "front": "Call",
+            "back": "Aramak",
+            "exampleSentence": "Call me later.",
+            "imageUri": "https://placehold.co/400x300?text=Call",
+            "audioFile": "Call.mp3"
+        },
+        {
+            "id": "b1_c51",
+            "front": "Meeting",
+            "back": "Toplantı",
+            "exampleSentence": "We have a meeting at 9 AM.",
+            "imageUri": "https://placehold.co/400x300?text=Meeting",
+            "audioFile": "Meeting.mp3"
+        },
+        {
+            "id": "b1_c52",
+            "front": "Presentation",
+            "back": "Sunum",
+            "exampleSentence": "Her presentation was excellent.",
+            "imageUri": "https://placehold.co/400x300?text=Presentation",
+            "audioFile": "Presentation.mp3"
+        },
+        {
+            "id": "b1_c53",
+            "front": "Report",
+            "back": "Rapor",
+            "exampleSentence": "Write a report about the event.",
+            "imageUri": "https://placehold.co/400x300?text=Report",
+            "audioFile": "Report.mp3"
+        },
+        {
+            "id": "b1_c54",
+            "front": "Project",
+            "back": "Proje",
+            "exampleSentence": "We are working on a new project.",
+            "imageUri": "https://placehold.co/400x300?text=Project",
+            "audioFile": "Project.mp3"
+        },
+        {
+            "id": "b1_c55",
+            "front": "Deadline",
+            "back": "Son teslim tarihi",
+            "exampleSentence": "The deadline is tomorrow.",
+            "imageUri": "https://placehold.co/400x300?text=Deadline",
+            "audioFile": "Deadline.mp3"
+        },
+        {
+            "id": "b1_c56",
+            "front": "Schedule",
+            "back": "Program",
+            "exampleSentence": "My schedule is very busy.",
+            "imageUri": "https://placehold.co/400x300?text=Schedule",
+            "audioFile": "Schedule.mp3"
+        },
+        {
+            "id": "b1_c57",
+            "front": "Appointment",
+            "back": "Randevu",
+            "exampleSentence": "I have a dentist appointment.",
+            "imageUri": "https://placehold.co/400x300?text=Appointment",
+            "audioFile": "Appointment.mp3"
+        },
+        {
+            "id": "b1_c58",
+            "front": "Government",
+            "back": "Hükümet",
+            "exampleSentence": "The government made new laws.",
+            "imageUri": "https://placehold.co/400x300?text=Government",
+            "audioFile": "Government.mp3"
+        },
+        {
+            "id": "b1_c59",
+            "front": "Law",
+            "back": "Kanun",
+            "exampleSentence": "We must follow the law.",
+            "imageUri": "https://placehold.co/400x300?text=Law",
+            "audioFile": "Law.mp3"
+        },
+        {
+            "id": "b1_c60",
+            "front": "Politics",
+            "back": "Siyaset",
+            "exampleSentence": "Politics is a complex subject.",
+            "imageUri": "https://placehold.co/400x300?text=Politics",
+            "audioFile": "Politics.mp3"
+        },
+        {
+            "id": "b1_c61",
+            "front": "Economy",
+            "back": "Ekonomi",
+            "exampleSentence": "The economy is growing.",
+            "imageUri": "https://placehold.co/400x300?text=Economy",
+            "audioFile": "Economy.mp3"
+        },
+        {
+            "id": "b1_c62",
+            "front": "Society",
+            "back": "Toplum",
+            "exampleSentence": "We live in a society.",
+            "imageUri": "https://placehold.co/400x300?text=Society",
+            "audioFile": "Society.mp3"
+        },
+        {
+            "id": "b1_c63",
+            "front": "Culture",
+            "back": "Kültür",
+            "exampleSentence": "Every country has its own culture.",
+            "imageUri": "https://placehold.co/400x300?text=Culture",
+            "audioFile": "Culture.mp3"
+        },
+        {
+            "id": "b1_c64",
+            "front": "Tradition",
+            "back": "Gelenek",
+            "exampleSentence": "It is a family tradition.",
+            "imageUri": "https://placehold.co/400x300?text=Tradition",
+            "audioFile": "Tradition.mp3"
+        },
+        {
+            "id": "b1_c65",
+            "front": "Industry",
+            "back": "Endüstri",
+            "exampleSentence": "The automotive industry is big.",
+            "imageUri": "https://placehold.co/400x300?text=Industry",
+            "audioFile": "Industry.mp3"
+        },
+        {
+            "id": "b1_c66",
+            "front": "Factory",
+            "back": "Fabrika",
+            "exampleSentence": "He works in a factory.",
+            "imageUri": "https://placehold.co/400x300?text=Factory",
+            "audioFile": "Factory.mp3"
+        },
+        {
+            "id": "b1_c67",
+            "front": "Machine",
+            "back": "Makine",
+            "exampleSentence": "The machine is broken.",
+            "imageUri": "https://placehold.co/400x300?text=Machine",
+            "audioFile": "Machine.mp3"
+        },
+        {
+            "id": "b1_c68",
+            "front": "Engine",
+            "back": "Motor",
+            "exampleSentence": "The car engine is loud.",
+            "imageUri": "https://placehold.co/400x300?text=Engine",
+            "audioFile": "Engine.mp3"
+        },
+        {
+            "id": "b1_c69",
+            "front": "Fuel",
+            "back": "Yakıt",
+            "exampleSentence": "We need more fuel.",
+            "imageUri": "https://placehold.co/400x300?text=Fuel",
+            "audioFile": "Fuel.mp3"
+        },
+        {
+            "id": "b1_c70",
+            "front": "Energy",
+            "back": "Enerji",
+            "exampleSentence": "Use solar energy.",
+            "imageUri": "https://placehold.co/400x300?text=Energy",
+            "audioFile": "Energy.mp3"
+        },
+        {
+            "id": "b1_c71",
+            "front": "Electricity",
+            "back": "Elektrik",
+            "exampleSentence": "The electricity went out.",
+            "imageUri": "https://placehold.co/400x300?text=Electricity",
+            "audioFile": "Electricity.mp3"
+        },
+        {
+            "id": "b1_c72",
+            "front": "Transport",
+            "back": "Ulaşım",
+            "exampleSentence": "Public transport is cheap.",
+            "imageUri": "https://placehold.co/400x300?text=Transport",
+            "audioFile": "Transport.mp3"
+        },
+        {
+            "id": "b1_c73",
+            "front": "Traffic",
+            "back": "Trafik",
+            "exampleSentence": "There is a lot of traffic.",
+            "imageUri": "https://placehold.co/400x300?text=Traffic",
+            "audioFile": "Traffic.mp3"
+        },
+        {
+            "id": "b1_c74",
+            "front": "Vehicle",
+            "back": "Araç",
+            "exampleSentence": "Park your vehicle here.",
+            "imageUri": "https://placehold.co/400x300?text=Vehicle",
+            "audioFile": "Vehicle.mp3"
+        },
+        {
+            "id": "b1_c75",
+            "front": "Passenger",
+            "back": "Yolcu",
+            "exampleSentence": "The bus has many passengers.",
+            "imageUri": "https://placehold.co/400x300?text=Passenger",
+            "audioFile": "Passenger.mp3"
+        },
+        {
+            "id": "b1_c76",
+            "front": "Driver",
+            "back": "Sürücü",
+            "exampleSentence": "The driver stopped the car.",
+            "imageUri": "https://placehold.co/400x300?text=Driver",
+            "audioFile": "Driver.mp3"
+        },
+        {
+            "id": "b1_c77",
+            "front": "Journey",
+            "back": "Yolculuk",
+            "exampleSentence": "Have a safe journey.",
+            "imageUri": "https://placehold.co/400x300?text=Journey",
+            "audioFile": "Journey.mp3"
+        },
+        {
+            "id": "b1_c78",
+            "front": "Trip",
+            "back": "Gezi",
+            "exampleSentence": "We went on a school trip.",
+            "imageUri": "https://placehold.co/400x300?text=Trip",
+            "audioFile": "Trip.mp3"
+        },
+        {
+            "id": "b1_c79",
+            "front": "Tour",
+            "back": "Tur",
+            "exampleSentence": "We took a tour of the city.",
+            "imageUri": "https://placehold.co/400x300?text=Tour",
+            "audioFile": "Tour.mp3"
+        },
+        {
+            "id": "b1_c80",
+            "front": "Guide",
+            "back": "Rehber",
+            "exampleSentence": "The tour guide was helpful.",
+            "imageUri": "https://placehold.co/400x300?text=Guide",
+            "audioFile": "Guide.mp3"
+        },
+        {
+            "id": "b1_c81",
+            "front": "Adventure",
+            "back": "Macera",
+            "exampleSentence": "Life is an adventure.",
+            "imageUri": "https://placehold.co/400x300?text=Adventure",
+            "audioFile": "Adventure.mp3"
+        },
+        {
+            "id": "b1_c82",
+            "front": "Nature",
+            "back": "Doğa",
+            "exampleSentence": "I love being in nature.",
+            "imageUri": "https://placehold.co/400x300?text=Nature",
+            "audioFile": "Nature.mp3"
+        },
+        {
+            "id": "b1_c83",
+            "front": "Wildlife",
+            "back": "Yaban hayatı",
+            "exampleSentence": "Protect the wildlife.",
+            "imageUri": "https://placehold.co/400x300?text=Wildlife",
+            "audioFile": "Wildlife.mp3"
+        },
+        {
+            "id": "b1_c84",
+            "front": "Climate",
+            "back": "İklim",
+            "exampleSentence": "The climate is changing.",
+            "imageUri": "https://placehold.co/400x300?text=Climate",
+            "audioFile": "Climate.mp3"
+        },
+        {
+            "id": "b1_c85",
+            "front": "Global warming",
+            "back": "Küresel ısınma",
+            "exampleSentence": "Global warming is real.",
+            "imageUri": "https://placehold.co/400x300?text=Global+warming",
+            "audioFile": "Global_warming.mp3"
+        },
+        {
+            "id": "b1_c86",
+            "front": "Disaster",
+            "back": "Felaket",
+            "exampleSentence": "It was a natural disaster.",
+            "imageUri": "https://placehold.co/400x300?text=Disaster",
+            "audioFile": "Disaster.mp3"
+        },
+        {
+            "id": "b1_c87",
+            "front": "Accident",
+            "back": "Kaza",
+            "exampleSentence": "He had a car accident.",
+            "imageUri": "https://placehold.co/400x300?text=Accident",
+            "audioFile": "Accident.mp3"
+        },
+        {
+            "id": "b1_c88",
+            "front": "Emergency",
+            "back": "Acil durum",
+            "exampleSentence": "Call 911 in an emergency.",
+            "imageUri": "https://placehold.co/400x300?text=Emergency",
+            "audioFile": "Emergency.mp3"
+        },
+        {
+            "id": "b1_c89",
+            "front": "Police",
+            "back": "Polis",
+            "exampleSentence": "The police arrived quickly.",
+            "imageUri": "https://placehold.co/400x300?text=Police",
+            "audioFile": "Police.mp3"
+        },
+        {
+            "id": "b1_c90",
+            "front": "Firefighter",
+            "back": "İtfaiyeci",
+            "exampleSentence": "The firefighter saved the cat.",
+            "imageUri": "https://placehold.co/400x300?text=Firefighter",
+            "audioFile": "Firefighter.mp3"
+        },
+        {
+            "id": "b1_c91",
+            "front": "Ambulance",
+            "back": "Ambulans",
+            "exampleSentence": "The ambulance is coming.",
+            "imageUri": "https://placehold.co/400x300?text=Ambulance",
+            "audioFile": "Ambulance.mp3"
+        },
+        {
+            "id": "b1_c92",
+            "front": "Danger",
+            "back": "Tehlike",
+            "exampleSentence": "Stay away from danger.",
+            "imageUri": "https://placehold.co/400x300?text=Danger",
+            "audioFile": "Danger.mp3"
+        },
+        {
+            "id": "b1_c93",
+            "front": "Safe",
+            "back": "Güvenli",
+            "exampleSentence": "It is safe here.",
+            "imageUri": "https://placehold.co/400x300?text=Safe",
+            "audioFile": "Safe.mp3"
+        },
+        {
+            "id": "b1_c94",
+            "front": "Protect",
+            "back": "Korumak",
+            "exampleSentence": "Protect your eyes from the sun.",
+            "imageUri": "https://placehold.co/400x300?text=Protect",
+            "audioFile": "Protect.mp3"
+        },
+        {
+            "id": "b1_c95",
+            "front": "Save",
+            "back": "Kurtarmak/Biriktirmek",
+            "exampleSentence": "Save money for the future.",
+            "imageUri": "https://placehold.co/400x300?text=Save",
+            "audioFile": "Save.mp3"
+        },
+        {
+            "id": "b1_c96",
+            "front": "Destroy",
+            "back": "Yok etmek",
+            "exampleSentence": "Fire can destroy a house.",
+            "imageUri": "https://placehold.co/400x300?text=Destroy",
+            "audioFile": "Destroy.mp3"
+        },
+        {
+            "id": "b1_c97",
+            "front": "Repair",
+            "back": "Tamir etmek",
+            "exampleSentence": "He can repair the car.",
+            "imageUri": "https://placehold.co/400x300?text=Repair",
+            "audioFile": "Repair.mp3"
+        },
+        {
+            "id": "b1_c98",
+            "front": "Fix",
+            "back": "Düzeltmek",
+            "exampleSentence": "Can you fix this problem?",
+            "imageUri": "https://placehold.co/400x300?text=Fix",
+            "audioFile": "Fix.mp3"
+        },
+        {
+            "id": "b1_c99",
+            "front": "Improve",
+            "back": "Geliştirmek",
+            "exampleSentence": "I want to improve my English.",
+            "imageUri": "https://placehold.co/400x300?text=Improve",
+            "audioFile": "Improve.mp3"
+        },
+        {
+            "id": "b1_c100",
+            "front": "Develop",
+            "back": "Gelişmek/Geliştirmek",
+            "exampleSentence": "Children develop quickly.",
+            "imageUri": "https://placehold.co/400x300?text=Develop",
+            "audioFile": "Develop.mp3"
         }
     ]
 }

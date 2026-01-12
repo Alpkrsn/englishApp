@@ -240,7 +240,7 @@ export const StorageService = {
     },
 
     /**
-     * Update last studied timestamp
+     * Update last studied timestamp & Streak
      */
     async updateLastStudied(deckId: string): Promise<void> {
         const index = await readDeckIndex();
@@ -253,5 +253,54 @@ export const StorageService = {
                 : d
         );
         await writeDeckIndex(newIndex);
+        await this.updateStreak();
+    },
+
+    /**
+     * STREAK LOGIC
+     */
+    async getStreak(): Promise<{ currentStreak: number; lastStudyDate: string | null }> {
+        return await getJSON('user_streak', { currentStreak: 0, lastStudyDate: null });
+    },
+
+    async updateStreak(): Promise<void> {
+        const streakData = await this.getStreak();
+        const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
+        const lastDate = streakData.lastStudyDate;
+
+        if (lastDate === today) {
+            // Already studied today
+            return;
+        }
+
+        let newStreak = 1;
+        if (lastDate) {
+            const yesterday = new Date();
+            yesterday.setDate(yesterday.getDate() - 1);
+            const yesterdayStr = yesterday.toISOString().split('T')[0];
+
+            if (lastDate === yesterdayStr) {
+                // Studied yesterday, increment streak
+                newStreak = streakData.currentStreak + 1;
+            } else {
+                // Streak broken (missed a day or more)
+                newStreak = 1;
+            }
+        }
+
+        await setJSON('user_streak', { currentStreak: newStreak, lastStudyDate: today });
+    },
+
+    /**
+     * USER SETTINGS
+     */
+    async getUserSettings(): Promise<{ dailyCardLimit: number }> {
+        // Default limit is 20 if not set
+        const settings = await getJSON<{ dailyCardLimit: number }>('user_settings', { dailyCardLimit: 20 });
+        return settings;
+    },
+
+    async updateUserSettings(settings: { dailyCardLimit: number }): Promise<void> {
+        await setJSON('user_settings', settings);
     }
 };

@@ -1,13 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, Switch, ScrollView, TouchableOpacity, Image } from 'react-native';
 import { theme } from '../constants/theme';
 import { Ionicons } from '@expo/vector-icons';
 import { version } from '../../package.json';
+import { StorageService } from '../utils/StorageService';
 
 import { useTheme } from '../context/ThemeContext';
 
 export const SettingsScreen: React.FC = () => {
     const { colors, isDarkMode, toggleTheme } = useTheme();
+    const [dailyLimit, setDailyLimit] = useState(20);
+
+    useEffect(() => {
+        loadSettings();
+    }, []);
+
+    const loadSettings = async () => {
+        const settings = await StorageService.getUserSettings();
+        setDailyLimit(settings.dailyCardLimit);
+    };
+
+    const saveLimit = async (limit: number) => {
+        setDailyLimit(limit);
+        await StorageService.updateUserSettings({ dailyCardLimit: limit });
+    };
 
     return (
         <ScrollView style={[styles.container, { backgroundColor: colors.background }]}>
@@ -33,14 +49,46 @@ export const SettingsScreen: React.FC = () => {
                     </View>
                 </View>
 
+                {/* Study Settings Section */}
+                <View style={styles.section}>
+                    <Text style={[styles.sectionTitle, { color: colors.text }]}>Study Settings</Text>
+                    <View style={[styles.card, { backgroundColor: colors.surface, borderColor: isDarkMode ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)' }]}>
+                        <Text style={[styles.settingLabel, { color: colors.text }]}>Daily Card Limit (Cards per Session)</Text>
+                        <Text style={[styles.settingDescription, { color: colors.textSecondary }]}>
+                            Maximum number of cards to study in one session.
+                        </Text>
+                        <View style={styles.limitOptions}>
+                            {[10, 20, 30, 50, 100].map((limit) => (
+                                <TouchableOpacity
+                                    key={limit}
+                                    style={[
+                                        styles.limitOption,
+                                        dailyLimit === limit && { backgroundColor: colors.primary },
+                                        { borderColor: colors.border }
+                                    ]}
+                                    onPress={() => saveLimit(limit)}
+                                >
+                                    <Text style={[
+                                        styles.limitText,
+                                        { color: dailyLimit === limit ? '#FFF' : colors.text }
+                                    ]}>{limit}</Text>
+                                </TouchableOpacity>
+                            ))}
+                        </View>
+                    </View>
+                </View>
+
                 {/* About Section */}
                 <View style={styles.section}>
                     <Text style={[styles.sectionTitle, { color: colors.text }]}>About</Text>
-
                     <View style={[styles.aboutCard, { backgroundColor: colors.surface, borderColor: isDarkMode ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)' }]}>
                         {/* App Icon / Logo Placeholder */}
                         <View style={styles.logoContainer}>
-                            <Ionicons name="school" size={60} color={colors.primaryNeon} />
+                            <Image
+                                source={require('../../assets/linguApp_logo.png')}
+                                style={styles.logo}
+                                resizeMode="contain"
+                            />
                         </View>
 
                         <Text style={[styles.appName, { color: colors.text }]}>LinguApp</Text>
@@ -128,6 +176,11 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.5,
         shadowRadius: 15,
         elevation: 10,
+        backgroundColor: 'transparent',
+    },
+    logo: {
+        width: 80,
+        height: 80,
     },
     appName: {
         ...theme.typography.h1,
@@ -160,5 +213,38 @@ const styles = StyleSheet.create({
         height: 1,
         backgroundColor: 'rgba(255,255,255,0.1)',
         marginHorizontal: theme.spacing.s,
+    },
+    card: {
+        borderRadius: theme.borderRadius.xl,
+        padding: theme.spacing.l,
+        borderWidth: 1,
+        borderColor: 'rgba(255,255,255,0.05)',
+        marginBottom: theme.spacing.m,
+    },
+    settingLabel: {
+        fontSize: 16,
+        fontWeight: 'bold',
+        marginBottom: theme.spacing.xs,
+    },
+    settingDescription: {
+        fontSize: 14,
+        marginBottom: theme.spacing.m,
+        lineHeight: 20,
+    },
+    limitOptions: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+    },
+    limitOption: {
+        width: 50,
+        height: 40,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: theme.borderRadius.m,
+        borderWidth: 1,
+    },
+    limitText: {
+        fontSize: 14,
+        fontWeight: 'bold',
     },
 });

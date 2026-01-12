@@ -21,13 +21,19 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.linguapp.app"
     },
     "web": {
       "favicon": "./assets/linguApp_navyblue.png"
     },
     "plugins": [
       "expo-asset"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "747920ae-ec30-4037-8393-d44e4254e39a"
+      }
+    }
   }
 }

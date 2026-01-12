@@ -54,9 +54,13 @@ export const HomeScreen: React.FC<Props> = ({ navigation }) => {
         opacity: menuAnim.value * 1 // Max opacity handled by bg color alpha
     }));
 
+    const [streak, setStreak] = useState(0);
+
     const loadDecks = async () => {
         const allDecks = await StorageService.getDecks();
         setDecks(allDecks);
+        const streakData = await StorageService.getStreak();
+        setStreak(streakData.currentStreak);
     };
 
     useEffect(() => {
@@ -109,6 +113,14 @@ export const HomeScreen: React.FC<Props> = ({ navigation }) => {
                         <LinearGradient start={vec(width / 2, 0)} end={vec(width / 2, 150)} colors={[colors.primary + '26', 'transparent']} />
                     </Rect>
                 </Canvas>
+            </View>
+
+            <View style={styles.headerContainer}>
+                <Text style={[styles.headerTitle, { color: colors.text }]}>My Decks</Text>
+                <View style={styles.streakContainer}>
+                    <Ionicons name="flame" size={24} color="#FF5722" />
+                    <Text style={[styles.streakText, { color: colors.text }]}>{streak}</Text>
+                </View>
             </View>
 
             <FlatList
@@ -254,5 +266,32 @@ const styles = StyleSheet.create({
         color: theme.colors.text,
         fontSize: 14,
         fontWeight: '600',
+    },
+    headerContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        paddingHorizontal: theme.spacing.l,
+        marginTop: theme.spacing.xl,
+        zIndex: 5,
+    },
+    headerTitle: {
+        ...theme.typography.h1,
+        fontSize: 32,
+    },
+    streakContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        backgroundColor: 'rgba(255, 87, 34, 0.1)',
+        paddingHorizontal: 12,
+        paddingVertical: 6,
+        borderRadius: 20,
+        gap: 6,
+        borderWidth: 1,
+        borderColor: 'rgba(255, 87, 34, 0.3)',
+    },
+    streakText: {
+        fontSize: 18,
+        fontWeight: 'bold',
     },
 });

@@ -1,0 +1,610 @@
+{
+    "id": "preset_b2_1",
+    "title": "B2 Upper Intermediate",
+    "description": "Advanced vocabulary for professional and academic contexts.",
+    "category": "Vocabulary",
+    "level": "B2",
+    "isPreset": true,
+    "cards": [
+        {
+            "id": "b2_1",
+            "front": "Ambiguous",
+            "back": "Belirsiz / Muğlak",
+            "exampleSentence": "The instructions were ambiguous."
+        },
+        {
+            "id": "b2_2",
+            "front": "Inevitable",
+            "back": "Kaçınılmaz",
+            "exampleSentence": "Change is inevitable."
+        },
+        {
+            "id": "b2_3",
+            "front": "Reluctant",
+            "back": "İsteksiz / Gönülsüz",
+            "exampleSentence": "He was reluctant to leave."
+        },
+        {
+            "id": "b2_4",
+            "front": "Subtle",
+            "back": "Hemen göze çarpmayan / İnce",
+            "exampleSentence": "There was a subtle change in the plan."
+        },
+        {
+            "id": "b2_5",
+            "front": "Accumulate",
+            "back": "Biriktirmek / Toplamak",
+            "exampleSentence": "Dust began to accumulate on the shelf."
+        },
+        {
+            "id": "b2_6",
+            "front": "Consequence",
+            "back": "Sonuç / Netice",
+            "exampleSentence": "Every action has a consequence."
+        },
+        {
+            "id": "b2_7",
+            "front": "Distinction",
+            "back": "Ayrım / Fark",
+            "exampleSentence": "There is a clear distinction between the two."
+        },
+        {
+            "id": "b2_8",
+            "front": "Emphasize",
+            "back": "Vurgulamak",
+            "exampleSentence": "I want to emphasize the importance of this."
+        },
+        {
+            "id": "b2_9",
+            "front": "Fluctuate",
+            "back": "Dalgalanmak / Değişmek",
+            "exampleSentence": "Prices fluctuate daily."
+        },
+        {
+            "id": "b2_10",
+            "front": "Grasp",
+            "back": "Kavramak / Anlamak",
+            "exampleSentence": "He couldn't quite grasp the concept."
+        },
+        {
+            "id": "b2_11",
+            "front": "Hesitate",
+            "back": "Tereddüt etmek",
+            "exampleSentence": "Don't hesitate to call me."
+        },
+        {
+            "id": "b2_12",
+            "front": "Implement",
+            "back": "Uygulamak / Yürürlüğe koymak",
+            "exampleSentence": "We need to implement the new rules."
+        },
+        {
+            "id": "b2_13",
+            "front": "Justify",
+            "back": "Haklı çıkarmak / Gerekçelendirmek",
+            "exampleSentence": "Can you justify your decision?"
+        },
+        {
+            "id": "b2_14",
+            "front": "Keen",
+            "back": "İstekli / Keskin",
+            "exampleSentence": "She is keen to learn."
+        },
+        {
+            "id": "b2_15",
+            "front": "Leisure",
+            "back": "Boş vakit / Keyif",
+            "exampleSentence": "I read for leisure."
+        },
+        {
+            "id": "b2_16",
+            "front": "Modify",
+            "back": "Değiştirmek / Uyarlamak",
+            "exampleSentence": "We had to modify the design."
+        },
+        {
+            "id": "b2_17",
+            "front": "Negotiate",
+            "back": "Müzakere etmek / Pazarlık yapmak",
+            "exampleSentence": "We need to negotiate the terms."
+        },
+        {
+            "id": "b2_18",
+            "front": "Obtain",
+            "back": "Elde etmek / Sağlamak",
+            "exampleSentence": "Where can I obtain a copy?"
+        },
+        {
+            "id": "b2_19",
+            "front": "Perceive",
+            "back": "Algılamak / Fark etmek",
+            "exampleSentence": "How do you perceive this situation?"
+        },
+        {
+            "id": "b2_20",
+            "front": "Quote",
+            "back": "Alıntı yapmak / Fiyat vermek",
+            "exampleSentence": "He likes to quote Shakespeare."
+        },
+        {
+            "id": "b2_21",
+            "front": "Radical",
+            "back": "Köklü / Radikal",
+            "exampleSentence": "They made radical changes."
+        },
+        {
+            "id": "b2_22",
+            "front": "Scarcely",
+            "back": "Neredeyse hiç / Güçbela",
+            "exampleSentence": "I could scarcely believe it."
+        },
+        {
+            "id": "b2_23",
+            "front": "Tension",
+            "back": "Gerilim / Tansiyon",
+            "exampleSentence": "There was tension in the room."
+        },
+        {
+            "id": "b2_24",
+            "front": "Undermine",
+            "back": "Zayıflatmak / Baltalamak",
+            "exampleSentence": "Don't undermine my authority."
+        },
+        {
+            "id": "b2_25",
+            "front": "Valid",
+            "back": "Geçerli / Mantıklı",
+            "exampleSentence": "That is a valid point."
+        },
+        {
+            "id": "b2_26",
+            "front": "Welfare",
+            "back": "Refah / Sağlık",
+            "exampleSentence": "They care about animal welfare."
+        },
+        {
+            "id": "b2_27",
+            "front": "Yield",
+            "back": "Ürün vermek / Teslim olmak",
+            "exampleSentence": "The investment yielded high returns."
+        },
+        {
+            "id": "b2_28",
+            "front": "Zone",
+            "back": "Bölge / Alan",
+            "exampleSentence": "This is a no-parking zone."
+        },
+        {
+            "id": "b2_29",
+            "front": "Abroad",
+            "back": "Yurt dışı",
+            "exampleSentence": "She studied abroad for a year."
+        },
+        {
+            "id": "b2_30",
+            "front": "Beneficial",
+            "back": "Faydalı / Yararlı",
+            "exampleSentence": "Exercise is beneficial to health."
+        },
+        {
+            "id": "b2_31",
+            "front": "Capacity",
+            "back": "Kapasite / Hacim",
+            "exampleSentence": "The stadium was filled to capacity."
+        },
+        {
+            "id": "b2_32",
+            "front": "Dedicate",
+            "back": "Adamak",
+            "exampleSentence": "He decided to dedicate his life to science."
+        },
+        {
+            "id": "b2_33",
+            "front": "Efficient",
+            "back": "Verimli / Etkili",
+            "exampleSentence": "This new engine is very efficient."
+        },
+        {
+            "id": "b2_34",
+            "front": "Fatal",
+            "back": "Ölümcül",
+            "exampleSentence": "It was a fatal mistake."
+        },
+        {
+            "id": "b2_35",
+            "front": "Gather",
+            "back": "Toplanmak / Biriktirmek",
+            "exampleSentence": "Clouds began to gather."
+        },
+        {
+            "id": "b2_36",
+            "front": "Hostile",
+            "back": "Düşmanca",
+            "exampleSentence": "The crowd became hostile."
+        },
+        {
+            "id": "b2_37",
+            "front": "Ignorant",
+            "back": "Cahil / Bilgisiz",
+            "exampleSentence": "He was ignorant of the facts."
+        },
+        {
+            "id": "b2_38",
+            "front": "Joint",
+            "back": "Ortak / Eklem",
+            "exampleSentence": "It was a joint effort."
+        },
+        {
+            "id": "b2_39",
+            "front": "Knock",
+            "back": "Vurmak / Çalmak (kapı)",
+            "exampleSentence": "I heard a knock at the door."
+        },
+        {
+            "id": "b2_40",
+            "front": "Landscape",
+            "back": "Manzara / Peyzaj",
+            "exampleSentence": "The landscape was beautiful."
+        },
+        {
+            "id": "b2_41",
+            "front": "Maintain",
+            "back": "Sürdürmek / Bakım yapmak",
+            "exampleSentence": "We must maintain order."
+        },
+        {
+            "id": "b2_42",
+            "front": "Neglect",
+            "back": "İhmal etmek",
+            "exampleSentence": "Don't neglect your duties."
+        },
+        {
+            "id": "b2_43",
+            "front": "Opponent",
+            "back": "Rakip / Muhalif",
+            "exampleSentence": "He respected his opponent."
+        },
+        {
+            "id": "b2_44",
+            "front": "Participate",
+            "back": "Katılmak",
+            "exampleSentence": "Did you participate in the game?"
+        },
+        {
+            "id": "b2_45",
+            "front": "Qualifications",
+            "back": "Nitelikler / Vasıflar",
+            "exampleSentence": "She has excellent qualifications."
+        },
+        {
+            "id": "b2_46",
+            "front": "Range",
+            "back": "Menzil / Çeşitlilik",
+            "exampleSentence": "We offer a wide range of products."
+        },
+        {
+            "id": "b2_47",
+            "front": "Satisfy",
+            "back": "Tatmin etmek / Memnun etmek",
+            "exampleSentence": "Hard work will satisfy you."
+        },
+        {
+            "id": "b2_48",
+            "front": "Threat",
+            "back": "Tehdit",
+            "exampleSentence": "Pollution is a threat to nature."
+        },
+        {
+            "id": "b2_49",
+            "front": "Urban",
+            "back": "Kentsel",
+            "exampleSentence": "She prefers urban life."
+        },
+        {
+            "id": "b2_50",
+            "front": "Vary",
+            "back": "Çeşitlilik göstermek / Değişmek",
+            "exampleSentence": "Opinions vary on this subject."
+        },
+        {
+            "id": "b2_51",
+            "front": "Wealth",
+            "back": "Servet / Zenginlik",
+            "exampleSentence": "Health is better than wealth."
+        },
+        {
+            "id": "b2_52",
+            "front": "Absorb",
+            "back": "Emmek / Özümsemek",
+            "exampleSentence": "Sponges absorb water."
+        },
+        {
+            "id": "b2_53",
+            "front": "Barrier",
+            "back": "Engel / Bariyer",
+            "exampleSentence": "Language can be a barrier."
+        },
+        {
+            "id": "b2_54",
+            "front": "Calculate",
+            "back": "Hesaplamak",
+            "exampleSentence": "We need to calculate the cost."
+        },
+        {
+            "id": "b2_55",
+            "front": "Debate",
+            "back": "Tartışma / Müzakere",
+            "exampleSentence": "There was a heated debate."
+        },
+        {
+            "id": "b2_56",
+            "front": "Eliminate",
+            "back": "Elemek / Ortadan kaldırmak",
+            "exampleSentence": "We must eliminate errors."
+        },
+        {
+            "id": "b2_57",
+            "front": "Feature",
+            "back": "Özellik / Nitelik",
+            "exampleSentence": "Which feature do you like best?"
+        },
+        {
+            "id": "b2_58",
+            "front": "Genre",
+            "back": "Tür / Tarz",
+            "exampleSentence": "What genre of music do you like?"
+        },
+        {
+            "id": "b2_59",
+            "front": "Habitat",
+            "back": "Yaşam alanı",
+            "exampleSentence": "The panda's natural habitat is threatened."
+        },
+        {
+            "id": "b2_60",
+            "front": "Identity",
+            "back": "Kimlik",
+            "exampleSentence": "She kept her identity secret."
+        },
+        {
+            "id": "b2_61",
+            "front": "Labor",
+            "back": "Emek / İş gücü",
+            "exampleSentence": "Manual labor can be tiring."
+        },
+        {
+            "id": "b2_62",
+            "front": "Massive",
+            "back": "Devasa / Kütlesel",
+            "exampleSentence": "It was a massive structure."
+        },
+        {
+            "id": "b2_63",
+            "front": "Neutral",
+            "back": "Tarafsız / Nötr",
+            "exampleSentence": "I remained neutral in the argument."
+        },
+        {
+            "id": "b2_64",
+            "front": "Occur",
+            "back": "Meydana gelmek / Olmak",
+            "exampleSentence": "Accidents can occur anywhere."
+        },
+        {
+            "id": "b2_65",
+            "front": "Panel",
+            "back": "Panel / Kurul",
+            "exampleSentence": "The panel discussed the issue."
+        },
+        {
+            "id": "b2_66",
+            "front": "Rare",
+            "back": "Nadir / Az pişmiş",
+            "exampleSentence": "It is rare to see him angry."
+        },
+        {
+            "id": "b2_67",
+            "front": "Scale",
+            "back": "Ölçek / Tartı",
+            "exampleSentence": "On a scale of one to ten."
+        },
+        {
+            "id": "b2_68",
+            "front": "Target",
+            "back": "Hedef",
+            "exampleSentence": "We met our sales target."
+        },
+        {
+            "id": "b2_69",
+            "front": "Ultimate",
+            "back": "Nihai / Son",
+            "exampleSentence": "That is the ultimate goal."
+        },
+        {
+            "id": "b2_70",
+            "front": "Vehicle",
+            "back": "Araç / Taşıt",
+            "exampleSentence": "The vehicle was damaged."
+        },
+        {
+            "id": "b2_71",
+            "front": "Warn",
+            "back": "Uyarmak",
+            "exampleSentence": "I must warn you about the dog."
+        },
+        {
+            "id": "b2_72",
+            "front": "Accurate",
+            "back": "Kesin / Doğru",
+            "exampleSentence": "Is this information accurate?"
+        },
+        {
+            "id": "b2_73",
+            "front": "Bias",
+            "back": "Önyargı",
+            "exampleSentence": "The report showed bias."
+        },
+        {
+            "id": "b2_74",
+            "front": "Capable",
+            "back": "Yetenekli / Kabiliyetli",
+            "exampleSentence": "She is capable of doing it."
+        },
+        {
+            "id": "b2_75",
+            "front": "Define",
+            "back": "Tanımlamak",
+            "exampleSentence": "How would you define success?"
+        },
+        {
+            "id": "b2_76",
+            "front": "Economical",
+            "back": "Ekonomik / Tasarruflu",
+            "exampleSentence": "This car is very economical."
+        },
+        {
+            "id": "b2_77",
+            "front": "Factor",
+            "back": "Faktör / Etken",
+            "exampleSentence": "Money was a major factor."
+        },
+        {
+            "id": "b2_78",
+            "front": "Generate",
+            "back": "Üretmek / Oluşturmak",
+            "exampleSentence": "Wind turbines generate electricity."
+        },
+        {
+            "id": "b2_79",
+            "front": "Harmful",
+            "back": "Zararlı",
+            "exampleSentence": "Smoking is harmful to health."
+        },
+        {
+            "id": "b2_80",
+            "front": "Illustrate",
+            "back": "Örneklemek / Resimlemek",
+            "exampleSentence": "Let me illustrate this point."
+        },
+        {
+            "id": "b2_81",
+            "front": "Journal",
+            "back": "Günlük / Dergi",
+            "exampleSentence": "She keeps a travel journal."
+        },
+        {
+            "id": "b2_82",
+            "front": "Layer",
+            "back": "Katman / Tabaka",
+            "exampleSentence": "The cake has a layer of cream."
+        },
+        {
+            "id": "b2_83",
+            "front": "Mature",
+            "back": "Olgun",
+            "exampleSentence": "He is very mature for his age."
+        },
+        {
+            "id": "b2_84",
+            "front": "Network",
+            "back": "Ağ / Şebeke",
+            "exampleSentence": "They have a large computer network."
+        },
+        {
+            "id": "b2_85",
+            "front": "Outcome",
+            "back": "Sonuç",
+            "exampleSentence": "We waited for the outcome."
+        },
+        {
+            "id": "b2_86",
+            "front": "Phase",
+            "back": "Evre / Aşama",
+            "exampleSentence": "It is just a phase."
+        },
+        {
+            "id": "b2_87",
+            "front": "Recover",
+            "back": "İyileşmek / Kurtarmak",
+            "exampleSentence": "It took weeks to recover."
+        },
+        {
+            "id": "b2_88",
+            "front": "Secure",
+            "back": "Güvenli / Sağlam",
+            "exampleSentence": "Keep your password secure."
+        },
+        {
+            "id": "b2_89",
+            "front": "Temporary",
+            "back": "Geçici",
+            "exampleSentence": "Current arrangement is temporary."
+        },
+        {
+            "id": "b2_90",
+            "front": "Unique",
+            "back": "Eşsiz / Benzersiz",
+            "exampleSentence": "Every person is unique."
+        },
+        {
+            "id": "b2_91",
+            "front": "Volume",
+            "back": "Hacim / Ses Seviyesi",
+            "exampleSentence": "Turn down the volume."
+        },
+        {
+            "id": "b2_92",
+            "front": "Witness",
+            "back": "Tanık / Şahit",
+            "exampleSentence": "He was a witness to the accident."
+        },
+        {
+            "id": "b2_93",
+            "front": "Yield",
+            "back": "Verim / Teslim Olmak",
+            "exampleSentence": "The crop yield was high."
+        },
+        {
+            "id": "b2_94",
+            "front": "Adjust",
+            "back": "Ayarlamak / Uydurmak",
+            "exampleSentence": "You need to adjust the seat."
+        },
+        {
+            "id": "b2_95",
+            "front": "Brief",
+            "back": "Kısa / Öz",
+            "exampleSentence": "Keep the meeting brief."
+        },
+        {
+            "id": "b2_96",
+            "front": "Complex",
+            "back": "Karmaşık",
+            "exampleSentence": "The problem is very complex."
+        },
+        {
+            "id": "b2_97",
+            "front": "Drama",
+            "back": "Drama / Tiyatro",
+            "exampleSentence": "She enjoys watching drama."
+        },
+        {
+            "id": "b2_98",
+            "front": "Enable",
+            "back": "Olanak sağlamak / Etkinleştirmek",
+            "exampleSentence": "This key will enable you to enter."
+        },
+        {
+            "id": "b2_99",
+            "front": "Fund",
+            "back": "Fon / Kaynak",
+            "exampleSentence": "They started a fund for the poor."
+        },
+        {
+            "id": "b2_100",
+            "front": "Goal",
+            "back": "Hedef / Amaç",
+            "exampleSentence": "His goal is to win."
+        }
+    ]
+}

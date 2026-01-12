@@ -3,6 +3,9 @@ import { StorageService } from './StorageService';
 import A1Basics from '../data/presetDecks/A1Basics.json';
 import A2Elementary from '../data/presetDecks/A2Elementary.json';
 import B1Intermediate from '../data/presetDecks/B1Intermediate.json';
+import B2UpperIntermediate from '../data/presetDecks/B2UpperIntermediate.json';
+import C1Advanced from '../data/presetDecks/C1Advanced.json';
+import C2Proficiency from '../data/presetDecks/C2Proficiency.json';
 import { AudioAssets } from './AudioAssets';
 import { Asset } from 'expo-asset';
 
@@ -12,6 +15,9 @@ const PRESET_DECKS: Record<string, any> = {
     'preset_a1_1': A1Basics,
     'preset_a2_1': A2Elementary,
     'preset_b1_1': B1Intermediate,
+    'preset_b2_1': B2UpperIntermediate,
+    'preset_c1_1': C1Advanced,
+    'preset_c2_1': C2Proficiency,
 };
 
 export interface PresetDeckSummary {

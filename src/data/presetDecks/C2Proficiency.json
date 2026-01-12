@@ -1,0 +1,610 @@
+{
+    "id": "preset_c2_1",
+    "title": "C2 Proficiency Vocabulary",
+    "description": "Mastery level vocabulary for nuanced and sophisticated expression.",
+    "category": "Vocabulary",
+    "level": "C2",
+    "isPreset": true,
+    "cards": [
+        {
+            "id": "c2_1",
+            "front": "Aberration",
+            "back": "Sapma / Anormallik",
+            "exampleSentence": "The test result was a statistical aberration."
+        },
+        {
+            "id": "c2_2",
+            "front": "Acquiesce",
+            "back": "Razı olmak / Kabul etmek",
+            "exampleSentence": "She acquiesced to his demands."
+        },
+        {
+            "id": "c2_3",
+            "front": "Alacrity",
+            "back": "Heves / Çeviklik",
+            "exampleSentence": "He accepted the offer with alacrity."
+        },
+        {
+            "id": "c2_4",
+            "front": "Ameliorate",
+            "back": "İyileştirmek",
+            "exampleSentence": "Steps have been taken to ameliorate the situation."
+        },
+        {
+            "id": "c2_5",
+            "front": "Appease",
+            "back": "Yatıştırmak / Taviz vermek",
+            "exampleSentence": "They tried to appease the angry crowd."
+        },
+        {
+            "id": "c2_6",
+            "front": "Audacious",
+            "back": "Cüretkar",
+            "exampleSentence": "It was an audacious plan."
+        },
+        {
+            "id": "c2_7",
+            "front": "Avarice",
+            "back": "Açgözlülük / Hırs",
+            "exampleSentence": "His avarice knows no bounds."
+        },
+        {
+            "id": "c2_8",
+            "front": "Banal",
+            "back": "Sıradan / Bayağı",
+            "exampleSentence": "The conversation was banal."
+        },
+        {
+            "id": "c2_9",
+            "front": "Benevolent",
+            "back": "Hayırsever / İyi niyetli",
+            "exampleSentence": "A benevolent leader."
+        },
+        {
+            "id": "c2_10",
+            "front": "Brazen",
+            "back": "Utanmaz / Yüzsüz",
+            "exampleSentence": "A brazen lie."
+        },
+        {
+            "id": "c2_11",
+            "front": "Cacophony",
+            "back": "Ses kargaşası",
+            "exampleSentence": "A cacophony of car horns."
+        },
+        {
+            "id": "c2_12",
+            "front": "Candor",
+            "back": "Açık sözlülük",
+            "exampleSentence": "I appreciate your candor."
+        },
+        {
+            "id": "c2_13",
+            "front": "Capricious",
+            "back": "Maymun iştahlı / Değişken",
+            "exampleSentence": "A capricious climate."
+        },
+        {
+            "id": "c2_14",
+            "front": "Castigate",
+            "back": "Azarlamak / Cezalandırmak",
+            "exampleSentence": "The judge castigated the lawyers."
+        },
+        {
+            "id": "c2_15",
+            "front": "Chicanery",
+            "back": "Hilebazlık / Dalavere",
+            "exampleSentence": "Political chicanery."
+        },
+        {
+            "id": "c2_16",
+            "front": "Circumspect",
+            "back": "Tedbirli / İhtiyatlı",
+            "exampleSentence": "She was circumspect about her plans."
+        },
+        {
+            "id": "c2_17",
+            "front": "Clandestine",
+            "back": "Gizli / Elden ele",
+            "exampleSentence": "A clandestine meeting."
+        },
+        {
+            "id": "c2_18",
+            "front": "Coerce",
+            "back": "Zorlamak / Mecbur etmek",
+            "exampleSentence": "He was coerced into signing."
+        },
+        {
+            "id": "c2_19",
+            "front": "Collusion",
+            "back": "Gizli anlaşma",
+            "exampleSentence": "Collusion between the two companies."
+        },
+        {
+            "id": "c2_20",
+            "front": "Complacent",
+            "back": "Halinden memnun / Rehavet içinde",
+            "exampleSentence": "We must not become complacent."
+        },
+        {
+            "id": "c2_21",
+            "front": "Conundrum",
+            "back": "Muamma / Çıkmaz",
+            "exampleSentence": "It poses a moral conundrum."
+        },
+        {
+            "id": "c2_22",
+            "front": "Deferential",
+            "back": "Saygılı",
+            "exampleSentence": "He was deferential to his elders."
+        },
+        {
+            "id": "c2_23",
+            "front": "Deleterious",
+            "back": "Zararlı",
+            "exampleSentence": "Deleterious effects on health."
+        },
+        {
+            "id": "c2_24",
+            "front": "Delineate",
+            "back": "Tasvir etmek / Sınırlarını çizmek",
+            "exampleSentence": "The law delineates our duties."
+        },
+        {
+            "id": "c2_25",
+            "front": "Despondent",
+            "back": "Umutsuz / Kederli",
+            "exampleSentence": "She grew despondent over the news."
+        },
+        {
+            "id": "c2_26",
+            "front": "Didactic",
+            "back": "Öğretici / Dikta eden",
+            "exampleSentence": "A didactic tone."
+        },
+        {
+            "id": "c2_27",
+            "front": "Disseminate",
+            "back": "Yaymak / Dağıtmak",
+            "exampleSentence": "Disseminate information."
+        },
+        {
+            "id": "c2_28",
+            "front": "Ebullient",
+            "back": "Coşkulu / Neşeli",
+            "exampleSentence": "She was ebullient after the win."
+        },
+        {
+            "id": "c2_29",
+            "front": "Egregious",
+            "back": "Vahim / Çok kötü",
+            "exampleSentence": "An egregious error."
+        },
+        {
+            "id": "c2_30",
+            "front": "Elucidate",
+            "back": "Açıklamak / Aydınlatmak",
+            "exampleSentence": "Please elucidate your theory."
+        },
+        {
+            "id": "c2_31",
+            "front": "Enervate",
+            "back": "Güçsüzleştirmek",
+            "exampleSentence": "The heat enervated us."
+        },
+        {
+            "id": "c2_32",
+            "front": "Ephemeral",
+            "back": "Geçici / Kısa ömürlü",
+            "exampleSentence": "Fashions are ephemeral."
+        },
+        {
+            "id": "c2_33",
+            "front": "Equanimity",
+            "back": "Temkin / Soğukkanlılık",
+            "exampleSentence": "He accepted the bad news with equanimity."
+        },
+        {
+            "id": "c2_34",
+            "front": "Equivocate",
+            "back": "Kaçamak konuşmak",
+            "exampleSentence": "Don't equivocate, give me an answer."
+        },
+        {
+            "id": "c2_35",
+            "front": "Esoteric",
+            "back": "Gizli / Sadece bilenlerin anladığı",
+            "exampleSentence": "Esoteric knowledge."
+        },
+        {
+            "id": "c2_36",
+            "front": "Exacerbate",
+            "back": "Kötüleştirmek / Alevlendirmek",
+            "exampleSentence": "Stress exacerbates the pain."
+        },
+        {
+            "id": "c2_37",
+            "front": "Extol",
+            "back": "Övmek / Yüceltmek",
+            "exampleSentence": "They extolled his virtues."
+        },
+        {
+            "id": "c2_38",
+            "front": "Fastidious",
+            "back": "Titiz / Müşkülpesent",
+            "exampleSentence": "He is fastidious about cleanliness."
+        },
+        {
+            "id": "c2_39",
+            "front": "Furtive",
+            "back": "Sinsi / Gizli",
+            "exampleSentence": "A furtive glance."
+        },
+        {
+            "id": "c2_40",
+            "front": "Gregarious",
+            "back": "Sokulgan / İnsan canlısı",
+            "exampleSentence": "She is a gregarious person."
+        },
+        {
+            "id": "c2_41",
+            "front": "Hackneyed",
+            "back": "Bayat / Basmakalıp",
+            "exampleSentence": "A hackneyed phrase."
+        },
+        {
+            "id": "c2_42",
+            "front": "Haphazard",
+            "back": "Rastgele / Gelişigüzel",
+            "exampleSentence": "A haphazard arrangement."
+        },
+        {
+            "id": "c2_43",
+            "front": "Harangue",
+            "back": "Nutuk çekmek / Haşlamak",
+            "exampleSentence": "He harangued the crowd."
+        },
+        {
+            "id": "c2_44",
+            "front": "Iconoclast",
+            "back": "Putkırıcı / Gelenek karşıtı",
+            "exampleSentence": "An iconoclast in the art world."
+        },
+        {
+            "id": "c2_45",
+            "front": "Idiosyncrasy",
+            "back": "Kişisel özellik / Tuhaflık",
+            "exampleSentence": "One of his idiosyncrasies."
+        },
+        {
+            "id": "c2_46",
+            "front": "Impeccable",
+            "back": "Kusursuz",
+            "exampleSentence": "Her taste is impeccable."
+        },
+        {
+            "id": "c2_47",
+            "front": "Impetuous",
+            "back": "Aceleci / Düşüncesiz",
+            "exampleSentence": "An impetuous decision."
+        },
+        {
+            "id": "c2_48",
+            "front": "Ineffable",
+            "back": "Tarifsiz / Sözle anlatılmaz",
+            "exampleSentence": "Ineffable beauty."
+        },
+        {
+            "id": "c2_49",
+            "front": "Inimical",
+            "back": "Zararlı / Düşmanca",
+            "exampleSentence": "Actions inimical to our interests."
+        },
+        {
+            "id": "c2_50",
+            "front": "Inscrutable",
+            "back": "Gizemsiz / Anlaşılmaz",
+            "exampleSentence": "An inscrutable smile."
+        },
+        {
+            "id": "c2_51",
+            "front": "Insidious",
+            "back": "Sinsi / Gizlice ilerleyen",
+            "exampleSentence": "An insidious disease."
+        },
+        {
+            "id": "c2_52",
+            "front": "Intransigent",
+            "back": "Uzlaşmaz / İnatçı",
+            "exampleSentence": "An intransigent attitude."
+        },
+        {
+            "id": "c2_53",
+            "front": "Juxtapose",
+            "back": "Yan yana koymak (karşılaştırma için)",
+            "exampleSentence": "Juxtapose the two images."
+        },
+        {
+            "id": "c2_54",
+            "front": "Laconic",
+            "back": "Az ve öz konuşan",
+            "exampleSentence": "His laconic reply."
+        },
+        {
+            "id": "c2_55",
+            "front": "Languid",
+            "back": "Halsiz / Dalgın",
+            "exampleSentence": "A languid wave of the hand."
+        },
+        {
+            "id": "c2_56",
+            "front": "Magnanimous",
+            "back": "Yüce gönüllü / Bağışlayıcı",
+            "exampleSentence": "A magnanimous gesture."
+        },
+        {
+            "id": "c2_57",
+            "front": "Malevolent",
+            "back": "Kötü niyetli",
+            "exampleSentence": "A malevolent spirit."
+        },
+        {
+            "id": "c2_58",
+            "front": "Meticulous",
+            "back": "Titiz / Kılı kırk yaran",
+            "exampleSentence": "Meticulous attention to detail."
+        },
+        {
+            "id": "c2_59",
+            "front": "Misanthrope",
+            "back": "İnsan sevmeyen",
+            "exampleSentence": "He died a lonely misanthrope."
+        },
+        {
+            "id": "c2_60",
+            "front": "Mitigate",
+            "back": "Hafifletmek / Azaltmak",
+            "exampleSentence": "Mitigate the risk."
+        },
+        {
+            "id": "c2_61",
+            "front": "Morose",
+            "back": "Somurtkan / Aksi",
+            "exampleSentence": "He was morose and silent."
+        },
+        {
+            "id": "c2_62",
+            "front": "Mundane",
+            "back": "Sıradan / Dünyevi",
+            "exampleSentence": "Mundane daily tasks."
+        },
+        {
+            "id": "c2_63",
+            "front": "Nebulous",
+            "back": "Bulutsu / Belirsiz",
+            "exampleSentence": "A nebulous concept."
+        },
+        {
+            "id": "c2_64",
+            "front": "Obfuscate",
+            "back": "Kafasını karıştırmak / Gizlemek",
+            "exampleSentence": "Don't obfuscate the truth."
+        },
+        {
+            "id": "c2_65",
+            "front": "Obsequious",
+            "back": "Dalkavuk / Yaltakçı",
+            "exampleSentence": "Obsequious service."
+        },
+        {
+            "id": "c2_66",
+            "front": "Obtuse",
+            "back": "Anlayışsız / Küt",
+            "exampleSentence": "Don't be so obtuse."
+        },
+        {
+            "id": "c2_67",
+            "front": "Onerous",
+            "back": "Külfetli / Ağır",
+            "exampleSentence": "An onerous task."
+        },
+        {
+            "id": "c2_68",
+            "front": "Ostentatious",
+            "back": "Gösterişli / Şatafatlı",
+            "exampleSentence": "Ostentatious wealth."
+        },
+        {
+            "id": "c2_69",
+            "front": "Paragon",
+            "back": "Mükemmel örnek / Numune",
+            "exampleSentence": "A paragon of virtue."
+        },
+        {
+            "id": "c2_70",
+            "front": "Pedantic",
+            "back": "Ukala / Bilgiçlik taslayan",
+            "exampleSentence": "His lecture was pedantic."
+        },
+        {
+            "id": "c2_71",
+            "front": "Perfunctory",
+            "back": "Yarım yamalak / Baştan savma",
+            "exampleSentence": "A perfunctory nod."
+        },
+        {
+            "id": "c2_72",
+            "front": "Pernicious",
+            "back": "Zararlı / Yıkıcı",
+            "exampleSentence": "Pernicious rumors."
+        },
+        {
+            "id": "c2_73",
+            "front": "Pervasive",
+            "back": "Yaygın / Sinmiş",
+            "exampleSentence": "Pervasive corruption."
+        },
+        {
+            "id": "c2_74",
+            "front": "Placate",
+            "back": "Yatıştırmak",
+            "exampleSentence": "To placate the critics."
+        },
+        {
+            "id": "c2_75",
+            "front": "Polemic",
+            "back": "Polemik / Tartışma",
+            "exampleSentence": "A religious polemic."
+        },
+        {
+            "id": "c2_76",
+            "front": "Pragmatic",
+            "back": "Faydacı / Pragmatik",
+            "exampleSentence": "A pragmatic approach."
+        },
+        {
+            "id": "c2_77",
+            "front": "Precipitate",
+            "back": "Hızlandırmak / Yağış",
+            "exampleSentence": "The crisis precipitated the war."
+        },
+        {
+            "id": "c2_78",
+            "front": "Prevaricate",
+            "back": "Gerçeği gizlemek / Kaçamak konuşmak",
+            "exampleSentence": "Stop prevaricating."
+        },
+        {
+            "id": "c2_79",
+            "front": "Prolific",
+            "back": "Verimli / Üretken",
+            "exampleSentence": "A prolific writer."
+        },
+        {
+            "id": "c2_80",
+            "front": "Propensity",
+            "back": "Eğilim / Meyil",
+            "exampleSentence": "Propensity to lie."
+        },
+        {
+            "id": "c2_81",
+            "front": "Prosaic",
+            "back": "Sıkıcı / Düzyazı gibi",
+            "exampleSentence": "A prosaic life."
+        },
+        {
+            "id": "c2_82",
+            "front": "Prudent",
+            "back": "Tedbirli / Basiretli",
+            "exampleSentence": "A prudent investment."
+        },
+        {
+            "id": "c2_83",
+            "front": "Quixotic",
+            "back": "Hayalperest / Donkişotvari",
+            "exampleSentence": "A quixotic project."
+        },
+        {
+            "id": "c2_84",
+            "front": "Rancorous",
+            "back": "Kin güden",
+            "exampleSentence": "A rancorous debate."
+        },
+        {
+            "id": "c2_85",
+            "front": "Recondite",
+            "back": "Anlaşılması güç / Gizli",
+            "exampleSentence": "Recondite subject."
+        },
+        {
+            "id": "c2_86",
+            "front": "Redundant",
+            "back": "Gereksiz / Fazlalık",
+            "exampleSentence": "Redundant words."
+        },
+        {
+            "id": "c2_87",
+            "front": "Repudiate",
+            "back": "Reddetmek / Tanımamak",
+            "exampleSentence": "Repudiate the contract."
+        },
+        {
+            "id": "c2_88",
+            "front": "Resilient",
+            "back": "Dirençli / Esnek",
+            "exampleSentence": "Resilient economy."
+        },
+        {
+            "id": "c2_89",
+            "front": "Reticent",
+            "back": "Suskun / Ser verip sır vermeyen",
+            "exampleSentence": "She was reticent about her past."
+        },
+        {
+            "id": "c2_90",
+            "front": "Reverence",
+            "back": "Hürmet / Saygı",
+            "exampleSentence": "Reverence for tradition."
+        },
+        {
+            "id": "c2_91",
+            "front": "Sagacious",
+            "back": "Bilgece / Sezgili",
+            "exampleSentence": "A sagacious decision."
+        },
+        {
+            "id": "c2_92",
+            "front": "Salubrious",
+            "back": "Sağlıklı / Faydalı",
+            "exampleSentence": "Salubrious climate."
+        },
+        {
+            "id": "c2_93",
+            "front": "Sanguine",
+            "back": "İyimser / Kanlı canlı",
+            "exampleSentence": "Sanguine about the future."
+        },
+        {
+            "id": "c2_94",
+            "front": "Scrupulous",
+            "back": "Vicdanlı / Titiz",
+            "exampleSentence": "Scrupulous honesty."
+        },
+        {
+            "id": "c2_95",
+            "front": "Solicitous",
+            "back": "Endişeli / İlgili",
+            "exampleSentence": "Solicitous for his welfare."
+        },
+        {
+            "id": "c2_96",
+            "front": "Spurious",
+            "back": "Sahte / Uydurma",
+            "exampleSentence": "Spurious claims."
+        },
+        {
+            "id": "c2_97",
+            "front": "Staunch",
+            "back": "Sadık / Güvenilir",
+            "exampleSentence": "A staunch supporter."
+        },
+        {
+            "id": "c2_98",
+            "front": "Superfluous",
+            "back": "Gereksiz / Fazla",
+            "exampleSentence": "Superfluous details."
+        },
+        {
+            "id": "c2_99",
+            "front": "Sycophant",
+            "back": "Dalkavuk",
+            "exampleSentence": "Surrounded by sycophants."
+        },
+        {
+            "id": "c2_100",
+            "front": "Taciturn",
+            "back": "Suskun / Sessiz",
+            "exampleSentence": "A taciturn man."
+        }
+    ]
+}
